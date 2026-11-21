@@ -1,0 +1,783 @@
+# Translation of wm-dsgvo-newsletter-suite in sk_SK
+# Copyright (C) 2026 Arnold Wender
+# This file is distributed under the GPLv2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: wm-dsgvo-newsletter-suite 1.2.1\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wm-dsgvo-"
+"newsletter-suite\n"
+"POT-Creation-Date: 2026-11-21T13:12:17+00:00\n"
+"PO-Revision-Date: 2026-11-21 14:12+0100\n"
+"Last-Translator: WM Suite <https://github.com/arnoldwender/wm-wp-dsgvo-"
+"newsletter-suite/issues>\n"
+"Language-Team: WM Suite <https://github.com/arnoldwender/wm-wp-dsgvo-"
+"newsletter-suite/issues>\n"
+"Language: sk_SK\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Generator: WM Suite i18n Compiler 2026\n"
+"X-Domain: wm-dsgvo-newsletter-suite\n"
+
+#. Plugin Name of the plugin
+#: wm-dsgvo-newsletter-suite.php includes/Admin/AdminDashboard.php:74
+#: includes/Admin/AdminDashboard.php:311
+msgid "WM DSGVO Newsletter Suite"
+msgstr "WM GDPR Newsletter Suite"
+
+#. Plugin URI of the plugin
+#: wm-dsgvo-newsletter-suite.php
+msgid "https://arnoldwender.com/wordpress-plugins/wm-dsgvo-newsletter-suite/"
+msgstr "https://arnoldwender.com/wordpress-plugins/wm-dsgvo-newsletter-suite/"
+
+#. Description of the plugin
+#: wm-dsgvo-newsletter-suite.php
+msgid ""
+"Newsletter-Anmeldung mit Double-Opt-In: Formular mit Einwilligungs-Checkbox "
+"und Proof-of-Work, Bestätigungsmail, Protokoll je Anmeldung "
+"(Einwilligungstext, Hash, geschlüsselter IP-Hash) und serverseitige Übergabe "
+"bestätigter Adressen an Brevo, Rapidmail, CleverReach, Kit oder Mailchimp. "
+"Keine rechtliche Bewertung."
+msgstr ""
+"Prihlásenie na odber newslettera s dvojitým potvrdením (double opt-in): "
+"formulár s políkom súhlasu a proof-of-work, potvrdzovací e-mail, záznam ku "
+"každému prihláseniu (text súhlasu, odtlačok, kľúčovaný odtlačok IP) a "
+"serverové odovzdanie potvrdených adries do Brevo, Rapidmail, CleverReach, "
+"Kit alebo Mailchimp. Bez právneho posúdenia."
+
+#. Author of the plugin
+#: wm-dsgvo-newsletter-suite.php
+msgid "Arnold Wender"
+msgstr "Arnold Wender"
+
+#. Author URI of the plugin
+#: wm-dsgvo-newsletter-suite.php
+msgid "https://arnoldwender.com"
+msgstr "https://arnoldwender.com"
+
+#: includes/Admin/AdminDashboard.php:49
+msgid "Nur lokal (keine Übergabe an einen Anbieter)"
+msgstr "Iba lokálne (bez odovzdania poskytovateľovi)"
+
+#: includes/Admin/AdminDashboard.php:93
+msgid "Anbieter nicht vollständig eingerichtet"
+msgstr "Poskytovateľ nie je úplne nastavený"
+
+#: includes/Admin/AdminDashboard.php:95
+msgid "Übergaben an den Anbieter fehlgeschlagen"
+msgstr "Odovzdanie poskytovateľovi zlyhalo"
+
+#: includes/Admin/AdminDashboard.php:97
+msgid "Double-Opt-In aktiv"
+msgstr "Double opt-in aktívny"
+
+#: includes/Admin/AdminDashboard.php:108
+msgid "Abonniert"
+msgstr "Prihlásení"
+
+#: includes/Admin/AdminDashboard.php:112
+msgid "Unbestätigt"
+msgstr "Nepotvrdení"
+
+#: includes/Admin/AdminDashboard.php:116
+msgid "Übergabe fehlgeschlagen"
+msgstr "Odovzdanie zlyhalo"
+
+#: includes/Admin/AdminDashboard.php:122
+msgid "Newsletter Suite öffnen"
+msgstr "Otvoriť Newsletter Suite"
+
+#: includes/Admin/AdminDashboard.php:141
+msgid "WM DSGVO Newsletter"
+msgstr "WM GDPR Newsletter"
+
+#: includes/Admin/AdminDashboard.php:142
+msgid "DSGVO Newsletter"
+msgstr "GDPR Newsletter"
+
+#: includes/Admin/AdminDashboard.php:177 includes/Admin/AdminDashboard.php:211
+#: includes/Admin/AdminDashboard.php:229
+msgid "Keine Berechtigung."
+msgstr "Nedostatočné oprávnenie."
+
+#: includes/Admin/AdminDashboard.php:267
+msgid "Keine bestätigte Anmeldung wartete auf Übergabe."
+msgstr "Žiadne potvrdené prihlásenie nečakalo na odovzdanie."
+
+#. translators: %d: number of contacts an external provider accepted
+#: includes/Admin/AdminDashboard.php:272
+#, php-format
+msgid "%d Kontakte an den Anbieter übergeben."
+msgstr "%d kontaktov odovzdaných poskytovateľovi."
+
+#. translators: %d: number of confirmed addresses kept in the local table
+#: includes/Admin/AdminDashboard.php:276
+#, php-format
+msgid ""
+"%d bestätigte Adressen nur in der lokalen Tabelle geführt (Einstellung „Nur "
+"lokal“, nichts verlässt die Website)."
+msgstr ""
+"%d potvrdených adries vedených iba v lokálnej tabuľke (nastavenie „Iba "
+"lokálne“, nič neopúšťa web)."
+
+#. translators: %d: number of failed pushes
+#: includes/Admin/AdminDashboard.php:280
+#, php-format
+msgid ""
+"%d Übergaben fehlgeschlagen; die Antwort des Anbieters steht im PHP-"
+"Fehlerprotokoll."
+msgstr "%d odovzdaní zlyhalo; odpoveď poskytovateľa je v chybovom zázname PHP."
+
+#: includes/Admin/AdminDashboard.php:293
+msgid "Übersicht"
+msgstr "Prehľad"
+
+#: includes/Admin/AdminDashboard.php:294
+msgid "Anmeldungen"
+msgstr "Prihlásenia"
+
+#: includes/Admin/AdminDashboard.php:295
+msgid "Einstellungen"
+msgstr "Nastavenia"
+
+#: includes/Admin/AdminDashboard.php:296
+msgid "Shortcode"
+msgstr "Shortcode"
+
+#: includes/Admin/AdminDashboard.php:312
+msgid ""
+"Newsletter-Anmeldung mit Double-Opt-In: Formular, Bestätigungsmail, "
+"Protokoll je Anmeldung und Übergabe bestätigter Adressen an den "
+"eingestellten Anbieter. Es ersetzt keine rechtliche Prüfung von "
+"Einwilligungstext und Versand."
+msgstr ""
+"Prihlásenie na newsletter s double opt-in: formulár, potvrdzovací e-mail, "
+"záznam ku každému prihláseniu a odovzdanie potvrdených adries nastavenému "
+"poskytovateľovi. Nenahrádza právne posúdenie textu súhlasu a odosielania."
+
+#: includes/Admin/AdminDashboard.php:315
+msgid "Part of the WM Suite plugin family"
+msgstr "Súčasť rodiny pluginov WM Suite"
+
+#: includes/Admin/AdminDashboard.php:317
+msgid "WM Suite"
+msgstr "WM Suite"
+
+#: includes/Admin/AdminDashboard.php:318
+msgid "Hub"
+msgstr "Hub"
+
+#: includes/Admin/AdminDashboard.php:318
+msgid "Standalone"
+msgstr "Samostatný"
+
+#: includes/Admin/AdminDashboard.php:325
+msgid "Übergabe jetzt ausführen"
+msgstr "Spustiť odovzdanie teraz"
+
+#: includes/Admin/AdminDashboard.php:330
+msgid "Bereiche"
+msgstr "Sekcie"
+
+#: includes/Admin/AdminDashboard.php:338
+msgid "Einstellungen gespeichert."
+msgstr "Nastavenia uložené."
+
+#: includes/Admin/AdminDashboard.php:351
+msgid "Abonniert (lokale Tabelle)"
+msgstr "Prihlásení (lokálna tabuľka)"
+
+#: includes/Admin/AdminDashboard.php:355
+msgid "Unbestätigte Anmeldungen"
+msgstr "Nepotvrdené prihlásenia"
+
+#: includes/Admin/AdminDashboard.php:360
+msgid "Nur lokal geführt (keine Übergabe an einen Anbieter)"
+msgstr "Vedené iba lokálne (bez odovzdania poskytovateľovi)"
+
+#: includes/Admin/AdminDashboard.php:363
+msgid "An den Anbieter übergeben"
+msgstr "Odovzdané poskytovateľovi"
+
+#: includes/Admin/AdminDashboard.php:368
+msgid "Abgemeldet (lokale Tabelle)"
+msgstr "Odhlásení (lokálna tabuľka)"
+
+#: includes/Admin/AdminDashboard.php:373
+msgid "Stand dieser Website"
+msgstr "Stav tejto stránky"
+
+#: includes/Admin/AdminDashboard.php:374
+msgid "Beim Aufruf dieser Seite gelesen."
+msgstr "Načítané pri otvorení tejto stránky."
+
+#: includes/Admin/AdminDashboard.php:378 includes/Admin/AdminDashboard.php:466
+#: includes/Admin/AdminDashboard.php:508
+msgid "Anbieter"
+msgstr "Poskytovateľ"
+
+#. translators: %s: comma-separated setting names
+#: includes/Admin/AdminDashboard.php:385
+#, php-format
+msgid "Es fehlt: %s"
+msgstr "Chýba: %s"
+
+#: includes/Admin/AdminDashboard.php:392
+msgid "An einen externen Anbieter übergeben"
+msgstr "Odovzdané externému poskytovateľovi"
+
+#: includes/Admin/AdminDashboard.php:396
+msgid ""
+"Nur in der lokalen Tabelle geführt (Einstellung „Nur lokal“, nichts verlässt "
+"die Website)"
+msgstr ""
+"Vedené iba v lokálnej tabuľke (nastavenie „Iba lokálne“, nič neopúšťa web)"
+
+#: includes/Admin/AdminDashboard.php:400
+msgid "Bestätigt, wartet auf den nächsten Übergabe-Lauf"
+msgstr "Potvrdené, čaká na ďalšie odovzdanie"
+
+#: includes/Admin/AdminDashboard.php:404
+msgid "Übergabe fehlgeschlagen (wird bei jedem Lauf erneut versucht)"
+msgstr "Odovzdanie zlyhalo (opakuje sa pri každom behu)"
+
+#: includes/Admin/AdminDashboard.php:408
+msgid "Nicht übergeben, weil die Adresse lokal abgemeldet ist"
+msgstr "Neodovzdané, pretože adresa je lokálne odhlásená"
+
+#: includes/Admin/AdminDashboard.php:412
+msgid "Nächster automatischer Übergabe-Lauf (WP-Cron, alle fünf Minuten)"
+msgstr "Ďalšie automatické odovzdanie (WP-Cron, každých päť minút)"
+
+#: includes/Admin/AdminDashboard.php:413
+msgid "nicht geplant"
+msgstr "nenaplánované"
+
+#: includes/Admin/AdminDashboard.php:416
+msgid "Bestätigungsfenster; danach werden unbestätigte Anmeldungen gelöscht"
+msgstr "Lehota na potvrdenie; potom sa nepotvrdené prihlásenia vymažú"
+
+#. translators: %d: hours
+#: includes/Admin/AdminDashboard.php:420
+#, php-format
+msgid "%d Stunden"
+msgstr "%d hodín"
+
+#: includes/Admin/AdminDashboard.php:425
+msgid "Proof-of-Work im Formular"
+msgstr "Proof-of-work vo formulári"
+
+#: includes/Admin/AdminDashboard.php:426 includes/Admin/AdminDashboard.php:430
+msgid "an"
+msgstr "zapnuté"
+
+#: includes/Admin/AdminDashboard.php:426 includes/Admin/AdminDashboard.php:430
+msgid "aus"
+msgstr "vypnuté"
+
+#: includes/Admin/AdminDashboard.php:429
+msgid "List-Unsubscribe-Header in der Bestätigungsmail"
+msgstr "Hlavička List-Unsubscribe v potvrdzovacom e-maile"
+
+#: includes/Admin/AdminDashboard.php:437
+msgid "Was das Plugin tut und was nicht"
+msgstr "Čo plugin robí a čo nerobí"
+
+#: includes/Admin/AdminDashboard.php:439
+msgid ""
+"Jede Anmeldung wird mit dem angezeigten Einwilligungstext, dessen SHA-256-"
+"Hash, einem geschlüsselten Hash der IP-Adresse und dem Zeitpunkt "
+"gespeichert. Die Zeilen sind in der Datenbank änderbar; es gibt keine "
+"Signatur oder Kette."
+msgstr ""
+"Každé prihlásenie sa ukladá so zobrazeným textom súhlasu, jeho odtlačkom "
+"SHA-256, kľúčovaným odtlačkom IP adresy a časom. Riadky v databáze sú "
+"upraviteľné; neexistuje podpis ani reťazec."
+
+#: includes/Admin/AdminDashboard.php:440
+msgid ""
+"Erst nach Aufruf des Bestätigungslinks wird die Adresse als abonniert "
+"geführt und beim nächsten Lauf an den Anbieter übergeben. Unbestätigte "
+"Anmeldungen werden nach dem Bestätigungsfenster gelöscht."
+msgstr ""
+"Až po otvorení potvrdzovacieho odkazu je adresa vedená ako prihlásená a pri "
+"ďalšom behu odovzdaná poskytovateľovi. Nepotvrdené prihlásenia sa vymažú po "
+"uplynutí lehoty."
+
+#: includes/Admin/AdminDashboard.php:441
+msgid ""
+"Eine Abmeldung über den Link aus der Bestätigungsmail oder über den Webhook "
+"ändert nur die lokale Tabelle. Beim Anbieter bereits übergebene Kontakte "
+"bleiben dort angemeldet."
+msgstr ""
+"Odhlásenie cez odkaz v potvrdzovacom e-maile alebo cez webhook mení iba "
+"lokálnu tabuľku. Kontakty už odovzdané poskytovateľovi tam zostávajú "
+"prihlásené."
+
+#: includes/Admin/AdminDashboard.php:442
+msgid "Newsletter versendet das Plugin nicht; das macht der Anbieter."
+msgstr "Plugin nerozosiela newslettery; to zabezpečuje poskytovateľ."
+
+#: includes/Admin/AdminDashboard.php:443
+msgid ""
+"Ob Einwilligungstext, Bestätigungsmail und Anbieter den rechtlichen "
+"Anforderungen genügen, beurteilt das Plugin nicht."
+msgstr ""
+"Plugin neposudzuje, či text súhlasu, potvrdzovací e-mail a poskytovateľ "
+"spĺňajú zákonné požiadavky."
+
+#: includes/Admin/AdminDashboard.php:451
+msgid "Letzte 50 Anmeldungen"
+msgstr "Posledných 50 prihlásení"
+
+#: includes/Admin/AdminDashboard.php:455
+msgid "CSV-Export (bis 5.000 Zeilen)"
+msgstr "Export CSV (až 5 000 riadkov)"
+
+#: includes/Admin/AdminDashboard.php:461
+msgid "ID"
+msgstr "ID"
+
+#: includes/Admin/AdminDashboard.php:462
+msgid "E-Mail"
+msgstr "E-mail"
+
+#: includes/Admin/AdminDashboard.php:463
+msgid "IP-Hash"
+msgstr "Odtlačok IP"
+
+#: includes/Admin/AdminDashboard.php:464
+msgid "Hash des Einwilligungstexts"
+msgstr "Odtlačok textu súhlasu"
+
+#: includes/Admin/AdminDashboard.php:465
+msgid "Status"
+msgstr "Stav"
+
+#: includes/Admin/AdminDashboard.php:467
+msgid "Angemeldet"
+msgstr "Prihlásené"
+
+#: includes/Admin/AdminDashboard.php:468
+msgid "Bestätigt"
+msgstr "Potvrdené"
+
+#: includes/Admin/AdminDashboard.php:473
+msgid "Keine Anmeldungen vorhanden."
+msgstr "Žiadne prihlásenia nie sú k dispozícii."
+
+#: includes/Admin/AdminDashboard.php:506
+msgid "Allgemein und Absender"
+msgstr "Všeobecné a odosielateľ"
+
+#: includes/Admin/AdminDashboard.php:516
+msgid "Absendername"
+msgstr "Meno odosielateľa"
+
+#: includes/Admin/AdminDashboard.php:520
+msgid "Absenderadresse"
+msgstr "Adresa odosielateľa"
+
+#: includes/Admin/AdminDashboard.php:524
+msgid "Betreff der Bestätigungsmail"
+msgstr "Predmet potvrdzovacieho e-mailu"
+
+#: includes/Admin/AdminDashboard.php:528
+msgid ""
+"Bestätigungsfenster in Stunden (1–168); danach werden unbestätigte "
+"Anmeldungen gelöscht"
+msgstr ""
+"Lehota potvrdenia v hodinách (1–168); potom sa nepotvrdené prihlásenia vymažú"
+
+#: includes/Admin/AdminDashboard.php:532
+msgid "Impressum-URL (Fuß der Bestätigungsmail)"
+msgstr "URL tiráže / právnych údajov (päta e-mailu)"
+
+#: includes/Admin/AdminDashboard.php:536
+msgid "Datenschutzerklärung-URL (Formular und Mail)"
+msgstr "URL zásad ochrany osobných údajov (formulár a e-mail)"
+
+#: includes/Admin/AdminDashboard.php:542
+msgid ""
+"Proof-of-Work im Formular verlangen (der Browser rechnet vor dem Absenden; "
+"ohne HTTPS nicht möglich)"
+msgstr ""
+"Vyžadovať proof-of-work vo formulári (prehliadač počíta pred odoslaním; "
+"vyžaduje HTTPS)"
+
+#: includes/Admin/AdminDashboard.php:548
+msgid ""
+"List-Unsubscribe- und List-Unsubscribe-Post-Header in die Bestätigungsmail "
+"setzen"
+msgstr ""
+"Vkladať hlavičky List-Unsubscribe a List-Unsubscribe-Post do potvrdzovacieho "
+"e-mailu"
+
+#: includes/Admin/AdminDashboard.php:554
+msgid "Zugangsdaten der Anbieter"
+msgstr "Prístupové údaje poskytovateľov"
+
+#: includes/Admin/AdminDashboard.php:556
+msgid "Brevo API-Schlüssel"
+msgstr "API kľúč Brevo"
+
+#: includes/Admin/AdminDashboard.php:560
+msgid "Rapidmail API-Benutzer"
+msgstr "API používateľ Rapidmail"
+
+#: includes/Admin/AdminDashboard.php:564
+msgid "Rapidmail API-Passwort"
+msgstr "API heslo Rapidmail"
+
+#: includes/Admin/AdminDashboard.php:568
+msgid "CleverReach REST-Token"
+msgstr "REST token CleverReach"
+
+#: includes/Admin/AdminDashboard.php:572
+msgid "Kit API-Schlüssel (v4)"
+msgstr "API kľúč Kit (v4)"
+
+#: includes/Admin/AdminDashboard.php:576
+msgid "Mailchimp API-Schlüssel (mit Rechenzentrum, z. B. …-us6)"
+msgstr "API kľúč Mailchimp (s dátovým centrom, napr. …-us6)"
+
+#: includes/Admin/AdminDashboard.php:580
+msgid ""
+"Standard-Liste bzw. Gruppen-ID (Rapidmail, CleverReach und Mailchimp "
+"brauchen eine echte ID)"
+msgstr ""
+"Predvolené ID zoznamu alebo skupiny (Rapidmail, CleverReach a Mailchimp "
+"vyžadujú skutočné ID)"
+
+#: includes/Admin/AdminDashboard.php:586
+msgid "Webhook für Abmeldungen beim Anbieter"
+msgstr "Webhook pre odhlásenia u poskytovateľa"
+
+#: includes/Admin/AdminDashboard.php:587
+msgid ""
+"Tragen Sie diese Adresse beim Anbieter ein. Ein Ereignis unsubscribe, spam, "
+"contact_deleted, unsub, complaint oder deleted (oder keines) mit einer E-"
+"Mail-Adresse setzt den lokalen Eintrag auf abgemeldet. Die Adresse enthält "
+"den Schlüssel: nicht weitergeben."
+msgstr ""
+"Zadajte túto adresu u poskytovateľa. Udalosť unsubscribe, spam, "
+"contact_deleted, unsub, complaint alebo deleted (prípadne žiadna) s e-"
+"mailovou adresou nastaví lokálny záznam na odhlásený. Adresa obsahuje tajný "
+"kľúč: nezdieľajte ju."
+
+#: includes/Admin/AdminDashboard.php:589
+msgid "Webhook-URL"
+msgstr "URL webhooku"
+
+#: includes/Admin/AdminDashboard.php:595
+msgid "Deinstallation und Datenaufbewahrung"
+msgstr "Odinštalovanie a uchovávanie údajov"
+
+#: includes/Admin/AdminDashboard.php:596
+msgid ""
+"Standardmäßig bleiben Einstellungen, Abonnenten und Einwilligungsprotokolle "
+"beim Löschen des Plugins erhalten."
+msgstr ""
+"Štandardne zostávajú nastavenia, odberatelia a protokoly súhlasov pri "
+"odstránení pluginu zachované."
+
+#: includes/Admin/AdminDashboard.php:600
+msgid ""
+"Alle Einstellungen, Abonnenten und Einwilligungsprotokolle beim "
+"Deinstallieren unwiderruflich löschen"
+msgstr ""
+"Pri odinštalovaní nenávratne vymazať všetky nastavenia, odberateľov a "
+"protokoly súhlasov"
+
+#: includes/Admin/AdminDashboard.php:605
+msgid "Einstellungen speichern"
+msgstr "Uložiť nastavenia"
+
+#: includes/Admin/AdminDashboard.php:610
+msgid "Formular einbinden"
+msgstr "Vloženie formulára"
+
+#: includes/Admin/AdminDashboard.php:611
+msgid ""
+"Der Shortcode gibt das Anmeldeformular mit Einwilligungs-Checkbox und Link "
+"zur Datenschutzerklärung aus. Einen Gutenberg-Block gibt es nicht."
+msgstr ""
+"Shortcode vypíše prihlasovací formulár s políkom súhlasu a odkazom na zásady "
+"ochrany osobných údajov. Gutenberg blok neexistuje."
+
+#: includes/Admin/AdminDashboard.php:616
+msgid "Attribut"
+msgstr "Atribút"
+
+#: includes/Admin/AdminDashboard.php:617
+msgid "Standardwert"
+msgstr "Predvolená hodnota"
+
+#: includes/Admin/AdminDashboard.php:618
+msgid "Bedeutung"
+msgstr "Význam"
+
+#: includes/Admin/AdminDashboard.php:622
+msgid "Überschrift des Formulars"
+msgstr "Nadpis formulára"
+
+#: includes/Admin/AdminDashboard.php:623
+msgid "Text unter der Überschrift; leer bleibt er weg"
+msgstr "Text pod nadpisom; prázdny sa nezobrazí"
+
+#: includes/Admin/AdminDashboard.php:624
+msgid ""
+"Liste beim Anbieter; ohne Angabe (oder mit dem Wert default) gilt die "
+"Standard-Liste aus den Einstellungen"
+msgstr ""
+"Zoznam u poskytovateľa; bez uvedenia (alebo s hodnotou default) platí "
+"predvolený zoznam z nastavení"
+
+#: includes/Admin/AdminDashboard.php:625
+msgid ""
+"art_6_1_a oder art_6_1_b; wird mit der Anmeldung gespeichert, das Plugin "
+"prüft sie nicht"
+msgstr "art_6_1_a alebo art_6_1_b; uloží sa s prihlásením bez právnej kontroly"
+
+#: includes/Admin/AdminDashboard.php:626
+msgid "Beschriftung des Absende-Buttons"
+msgstr "Popis tlačidla odoslania"
+
+#: includes/Admin/SettingsManager.php:41 includes/Core/Activator.php:54
+#: includes/Mailer/DoiMailer.php:48
+msgid "Bitte bestätigen Sie Ihre Anmeldung"
+msgstr "Potvrďte prosím svoje prihlásenie"
+
+#: includes/Database/DoiRepository.php:147
+msgid "Ungültiger oder nicht gefundener Bestätigungstoken."
+msgstr "Neplatný alebo nenájdený potvrdzovací token."
+
+#: includes/Database/DoiRepository.php:158
+msgid "Ihre E-Mail-Adresse wurde bereits erfolgreich bestätigt."
+msgstr "Vaša e-mailová adresa už bola potvrdená."
+
+#: includes/Database/DoiRepository.php:168
+msgid "Dieser Bestätigungslink ist nicht mehr gültig."
+msgstr "Tento potvrdzovací odkaz už nie je platný."
+
+#. translators: %d: hours a confirmation link stays valid
+#: includes/Database/DoiRepository.php:186
+#, php-format
+msgid ""
+"Der Bestätigungslink ist abgelaufen (gültig %d Stunden). Bitte melden Sie "
+"sich erneut an."
+msgstr ""
+"Platnosť potvrdzovacieho odkazu vypršala (platný %d hodín). Prihláste sa "
+"prosím znova."
+
+#: includes/Database/DoiRepository.php:229
+msgid "Vielen Dank! Ihre E-Mail-Adresse wurde erfolgreich bestätigt."
+msgstr "Ďakujeme! Vaša e-mailová adresa bola úspešne potvrdená."
+
+#: includes/Domain/Enum/SubscriberStatus.php:18
+msgid "Aktiv abonniert"
+msgstr "Aktívne prihlásený"
+
+#: includes/Domain/Enum/SubscriberStatus.php:19
+msgid "Abgemeldet"
+msgstr "Odhlásený"
+
+#: includes/Domain/Enum/SubscriberStatus.php:20
+msgid "Bereinigt / Gelöscht"
+msgstr "Vyčistené / Vymazané"
+
+#: includes/Domain/Enum/SubscriberStatus.php:21
+msgid "Unbekannter Status"
+msgstr "Neznámy stav"
+
+#: includes/Frontend/EcosystemIntegrations.php:52
+msgid "WM Newsletter Statistik"
+msgstr "Štatistiky newslettera WM"
+
+#: includes/Frontend/EcosystemIntegrations.php:63
+msgid "Newsletter-Statistik"
+msgstr "Štatistiky newslettera"
+
+#: includes/Frontend/EcosystemIntegrations.php:70
+msgid "Kennzahl"
+msgstr "Ukazovateľ"
+
+#. translators: %s: Privacy policy URL
+#: includes/Frontend/FormRenderer.php:49
+#, php-format
+msgid ""
+"Ich willige in die Verarbeitung meiner E-Mail-Adresse zum Zweck des "
+"Newsletter-Versands ein. Der Widerruf ist gem. Art. 7 Abs. 3 DSGVO jederzeit "
+"möglich (<a href=\"%s\" target=\"_blank\" "
+"rel=\"noopener\">Datenschutzerklärung</a>)."
+msgstr ""
+"Súhlasím so spracovaním svojej e-mailovej adresy na účel zasielania "
+"newslettera. Súhlas možno kedykoľvek odvolať podľa čl. 7 ods. 3 GDPR (<a "
+"href=\"%s\" target=\"_blank\" rel=\"noopener\">Zásady ochrany osobných "
+"údajov</a>)."
+
+#: includes/Frontend/FormRenderer.php:87
+msgid "Wird übermittelt …"
+msgstr "Odosiela sa…"
+
+#: includes/Frontend/FormRenderer.php:88
+msgid "Sicherheitsprüfung läuft …"
+msgstr "Prebieha bezpečnostná kontrola…"
+
+#: includes/Frontend/FormRenderer.php:89
+msgid "Bestätigungslink wurde gesendet. Bitte prüfen Sie Ihr Postfach."
+msgstr "Potvrdzovací odkaz bol odoslaný. Skontrolujte prosím svoju schránku."
+
+#: includes/Frontend/FormRenderer.php:90
+msgid "Ein Fehler ist aufgetreten. Bitte versuchen Sie es erneut."
+msgstr "Vyskytla sa chyba. Skúste to prosím znova."
+
+#: includes/Frontend/FormRenderer.php:91
+#: includes/REST/SubscriptionController.php:196
+msgid "Bitte bestätigen Sie die Einwilligung."
+msgstr "Potvrďte prosím súhlas."
+
+#: includes/Frontend/FormRenderer.php:92
+msgid ""
+"Ihr Browser kann die Sicherheitsprüfung nicht ausführen (nur über HTTPS "
+"verfügbar)."
+msgstr ""
+"Váš prehliadač nemôže vykonať bezpečnostnú kontrolu (dostupné iba cez HTTPS)."
+
+#: includes/Frontend/FormRenderer.php:106
+msgid "Newsletter abonnieren"
+msgstr "Prihlásiť sa na newsletter"
+
+#: includes/Frontend/FormRenderer.php:112
+msgid "Anmelden"
+msgstr "Prihlásiť sa"
+
+#: includes/Frontend/FormRenderer.php:140
+#: includes/Frontend/FormRenderer.php:141
+msgid "Nicht ausfüllen"
+msgstr "Nevypĺňať"
+
+#: includes/Frontend/FormRenderer.php:146
+msgid "E-Mail-Adresse"
+msgstr "E-mailová adresa"
+
+#: includes/Frontend/FormRenderer.php:187
+msgid "E-Mail-Adresse bestätigt"
+msgstr "E-mailová adresa potvrdená"
+
+#: includes/Frontend/FormRenderer.php:187
+msgid "Bestätigung nicht möglich"
+msgstr "Potvrdenie nie je možné"
+
+#: includes/Frontend/FormRenderer.php:190
+msgid "Zur Startseite"
+msgstr "Späť na úvodnú stránku"
+
+#. translators: %d: hours an unconfirmed address is kept
+#: includes/Mailer/DoiMailer.php:56
+#, php-format
+msgid ""
+"Falls Sie diese Anfrage nicht ausgelöst haben, können Sie diese E-Mail "
+"ignorieren. Ohne Bestätigung wird Ihre Adresse nach %d Stunden gelöscht."
+msgstr ""
+"Ak ste túto žiadosť nevyvolali vy, môžete tento e-mail ignorovať. Bez "
+"potvrdenia bude vaša adresa vymazaná po %d hodinách."
+
+#: includes/Mailer/DoiMailer.php:64
+msgid "Bestätigung Ihrer E-Mail-Adresse"
+msgstr "Potvrdenie vašej e-mailovej adresy"
+
+#: includes/Mailer/DoiMailer.php:65
+msgid ""
+"Sie haben sich mit dieser E-Mail-Adresse für unseren Newsletter angemeldet. "
+"Um Ihre Anmeldung abzuschließen und den Empfang zu aktivieren, klicken Sie "
+"bitte auf den folgenden Bestätigungslink:"
+msgstr ""
+"S touto e-mailovou adresou ste sa prihlásili na odber nášho newslettera. Na "
+"dokončenie prihlásenia a aktiváciu odberu kliknite na nasledujúci "
+"potvrdzovací odkaz:"
+
+#: includes/Mailer/DoiMailer.php:68
+msgid "Anmeldung bestätigen"
+msgstr "Potvrdiť prihlásenie"
+
+#: includes/Mailer/DoiMailer.php:75
+msgid "Impressum"
+msgstr "Právne údaje"
+
+#: includes/Mailer/DoiMailer.php:76
+msgid "Datenschutzerklärung"
+msgstr "Zásady ochrany osobných údajov"
+
+#: includes/Queue/SyncQueue.php:74
+msgid "Alle fünf Minuten"
+msgstr "Každých päť minút"
+
+#: includes/REST/SubscriptionController.php:71
+#: includes/REST/SubscriptionController.php:94
+#: includes/REST/SubscriptionController.php:154
+#: includes/REST/SubscriptionController.php:282
+msgid "Zu viele Anfragen. Bitte warten Sie einen Moment."
+msgstr "Príliš veľa požiadaviek. Počkajte prosím chvíľu."
+
+#: includes/REST/SubscriptionController.php:166
+msgid "Vielen Dank für Ihre Anmeldung! Bitte prüfen Sie Ihr Postfach."
+msgstr "Ďakujeme za prihlásenie! Skontrolujte prosím svoju schránku."
+
+#: includes/REST/SubscriptionController.php:179
+msgid "Sicherheitsüberprüfung fehlgeschlagen (Proof-of-Work ungültig)."
+msgstr "Bezpečnostná kontrola zlyhala (neplatný proof-of-work)."
+
+#: includes/REST/SubscriptionController.php:189
+msgid "Bitte geben Sie eine gültige E-Mail-Adresse ein."
+msgstr "Zadajte prosím platnú e-mailovú adresu."
+
+#: includes/REST/SubscriptionController.php:204
+msgid "Das Formular ist ungültig. Bitte laden Sie die Seite neu."
+msgstr "Formulár je neplatný. Obnovte prosím stránku."
+
+#: includes/REST/SubscriptionController.php:235
+msgid ""
+"Die Anmeldung konnte nicht gespeichert werden. Bitte versuchen Sie es später."
+msgstr "Prihlásenie sa nepodarilo uložiť. Skúste to prosím neskôr."
+
+#: includes/REST/SubscriptionController.php:247
+msgid ""
+"Die Bestätigungs-E-Mail konnte nicht versendet werden. Bitte versuchen Sie "
+"es später."
+msgstr "Potvrdzovací e-mail sa nepodarilo odoslať. Skúste to prosím neskôr."
+
+#: includes/REST/SubscriptionController.php:253
+msgid ""
+"Fast geschafft! Wir haben Ihnen einen Bestätigungslink per E-Mail gesendet."
+msgstr "Takmer hotovo! Poslali sme vám potvrdzovací odkaz e-mailom."
+
+#: includes/REST/SubscriptionController.php:290
+msgid "Bitte geben Sie eine gültige E-Mail-Adresse an."
+msgstr "Uveďte prosím platnú e-mailovú adresu."
+
+#: includes/REST/SubscriptionController.php:298
+msgid ""
+"Der Abmeldelink ist ungültig oder abgelaufen. Bitte nutzen Sie den Link aus "
+"Ihrer E-Mail."
+msgstr ""
+"Odkaz na odhlásenie je neplatný alebo vypršal. Použite odkaz zo svojho e-"
+"mailu."
+
+#: includes/REST/SubscriptionController.php:306
+msgid "Sie wurden erfolgreich vom Newsletter abgemeldet."
+msgstr "Boli ste úspešne odhlásení z odberu newslettera."
+
+#. translators: %s: incident reference the visitor can quote to support
+#: includes/Security/ErrorSanitizer.php:28
+#, php-format
+msgid "Ein Systemfehler ist aufgetreten. Referenznummer: %s"
+msgstr "Vyskytla sa systémová chyba. Referenčné číslo: %s"
+
+#: includes/Security/RequestShield.php:54
+msgid "Die Anfrage wurde abgelehnt."
+msgstr "Požiadavka bola zamietnutá."
+
+#~ msgid "https://www.arnoldwender.com"
+#~ msgstr "https://www.arnoldwender.com"

@@ -1,0 +1,45 @@
+/* humanstxt.org */
+/* The humans responsible & technology colophon */
+
+# TEAM
+
+    Author: Arnold Wender
+
+    Built with: an agentic workflow (AI coding agents)
+# THANKS
+
+    To My Family -- For unconditional love, strength & continuous inspiration
+    WordPress Community & Core Contributors -- For democratizing publishing and powering the open web
+    Open Source Community -- For making software accessible to everyone
+
+# TECHNOLOGY COLOPHON
+
+    ## Architecture & Core
+    WordPress 6.4+ / 7.x
+    PHP 8.2+ (Strict Types, PSR-12, WPCS)
+    MySQL InnoDB, WP-Cron, WordPress HTTP API
+    WP-CLI command and REST API controllers
+
+    ## Frontend
+    Shortcode form in vanilla JavaScript with a Web Crypto proof of work
+    Self-hosted assets in /assets/
+
+    ## Quality
+    Standalone test suite with a mutation check, WordPress integration test
+    Keyed IP hashes and SHA-256 consent hashes in the records (no legal assessment)
+
+# SITE & PROJECT
+
+    Plugin: wm-dsgvo-newsletter-suite
+    Stack: WordPress plugin
+    Dependencies: none beyond WordPress
+
+# CONTACT
+
+    Author Website: https://arnoldwender.com
+    Repository: https://github.com/arnoldwender/wm-wp-dsgvo-newsletter-suite
+    Support: Zero support — reproducible bugs on GitHub Issues only (SUPPORT.md)
+
+# DEDICATION
+
+    Dedicated to my family with eternal love and gratitude.

@@ -1,0 +1,5 @@
+!assets/
+!assets/**
+.DS_Store
+*.log
+.remember/
