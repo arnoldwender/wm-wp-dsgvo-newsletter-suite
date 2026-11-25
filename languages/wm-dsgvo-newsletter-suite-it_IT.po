@@ -1,0 +1,790 @@
+# Translation of wm-dsgvo-newsletter-suite in it_IT
+# Copyright (C) 2026 Arnold Wender
+# This file is distributed under the GPLv2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: wm-dsgvo-newsletter-suite 1.2.1\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wm-dsgvo-"
+"newsletter-suite\n"
+"POT-Creation-Date: 2026-11-21T13:12:17+00:00\n"
+"PO-Revision-Date: 2026-11-21 14:12+0100\n"
+"Last-Translator: WM Suite <https://github.com/arnoldwender/wm-wp-dsgvo-"
+"newsletter-suite/issues>\n"
+"Language-Team: WM Suite <https://github.com/arnoldwender/wm-wp-dsgvo-"
+"newsletter-suite/issues>\n"
+"Language: it_IT\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: WM Suite i18n Compiler 2026\n"
+"X-Domain: wm-dsgvo-newsletter-suite\n"
+
+#. Plugin Name of the plugin
+#: wm-dsgvo-newsletter-suite.php includes/Admin/AdminDashboard.php:74
+#: includes/Admin/AdminDashboard.php:311
+msgid "WM DSGVO Newsletter Suite"
+msgstr "WM Suite Newsletter GDPR"
+
+#. Plugin URI of the plugin
+#: wm-dsgvo-newsletter-suite.php
+msgid "https://arnoldwender.com/wordpress-plugins/wm-dsgvo-newsletter-suite/"
+msgstr "https://arnoldwender.com/wordpress-plugins/wm-dsgvo-newsletter-suite/"
+
+#. Description of the plugin
+#: wm-dsgvo-newsletter-suite.php
+msgid ""
+"Newsletter-Anmeldung mit Double-Opt-In: Formular mit Einwilligungs-Checkbox "
+"und Proof-of-Work, Bestätigungsmail, Protokoll je Anmeldung "
+"(Einwilligungstext, Hash, geschlüsselter IP-Hash) und serverseitige Übergabe "
+"bestätigter Adressen an Brevo, Rapidmail, CleverReach, Kit oder Mailchimp. "
+"Keine rechtliche Bewertung."
+msgstr ""
+"Iscrizione alla newsletter con double opt-in: modulo con casella di consenso "
+"e proof-of-work, email di conferma, registro per iscrizione (testo del "
+"consenso, hash, hash IP con chiave) e invio lato server a Brevo, Rapidmail, "
+"CleverReach, Kit o Mailchimp. Nessuna valutazione legale."
+
+#. Author of the plugin
+#: wm-dsgvo-newsletter-suite.php
+msgid "Arnold Wender"
+msgstr "Arnold Wender"
+
+#. Author URI of the plugin
+#: wm-dsgvo-newsletter-suite.php
+msgid "https://arnoldwender.com"
+msgstr "https://arnoldwender.com"
+
+#: includes/Admin/AdminDashboard.php:49
+msgid "Nur lokal (keine Übergabe an einen Anbieter)"
+msgstr "Solo locale (nessun invio a un fornitore)"
+
+#: includes/Admin/AdminDashboard.php:93
+msgid "Anbieter nicht vollständig eingerichtet"
+msgstr "Fornitore non completamente configurato"
+
+#: includes/Admin/AdminDashboard.php:95
+msgid "Übergaben an den Anbieter fehlgeschlagen"
+msgstr "Invii al fornitore non riusciti"
+
+#: includes/Admin/AdminDashboard.php:97
+msgid "Double-Opt-In aktiv"
+msgstr "Double opt-in attivo"
+
+#: includes/Admin/AdminDashboard.php:108
+msgid "Abonniert"
+msgstr "Iscritti"
+
+#: includes/Admin/AdminDashboard.php:112
+msgid "Unbestätigt"
+msgstr "Non confermati"
+
+#: includes/Admin/AdminDashboard.php:116
+msgid "Übergabe fehlgeschlagen"
+msgstr "Invio non riuscito"
+
+#: includes/Admin/AdminDashboard.php:122
+msgid "Newsletter Suite öffnen"
+msgstr "Apri Newsletter Suite"
+
+#: includes/Admin/AdminDashboard.php:141
+msgid "WM DSGVO Newsletter"
+msgstr "WM Newsletter GDPR"
+
+#: includes/Admin/AdminDashboard.php:142
+msgid "DSGVO Newsletter"
+msgstr "Newsletter GDPR"
+
+#: includes/Admin/AdminDashboard.php:177 includes/Admin/AdminDashboard.php:211
+#: includes/Admin/AdminDashboard.php:229
+msgid "Keine Berechtigung."
+msgstr "Autorizzazione negata."
+
+#: includes/Admin/AdminDashboard.php:267
+msgid "Keine bestätigte Anmeldung wartete auf Übergabe."
+msgstr "Nessuna iscrizione confermata era in attesa di invio."
+
+#. translators: %d: number of contacts an external provider accepted
+#: includes/Admin/AdminDashboard.php:272
+#, php-format
+msgid "%d Kontakte an den Anbieter übergeben."
+msgstr "%d contatti trasferiti al fornitore."
+
+#. translators: %d: number of confirmed addresses kept in the local table
+#: includes/Admin/AdminDashboard.php:276
+#, php-format
+msgid ""
+"%d bestätigte Adressen nur in der lokalen Tabelle geführt (Einstellung „Nur "
+"lokal“, nichts verlässt die Website)."
+msgstr ""
+"%d indirizzi confermati mantenuti solo nella tabella locale (impostazione "
+"«Solo locale», nulla lascia il sito)."
+
+#. translators: %d: number of failed pushes
+#: includes/Admin/AdminDashboard.php:280
+#, php-format
+msgid ""
+"%d Übergaben fehlgeschlagen; die Antwort des Anbieters steht im PHP-"
+"Fehlerprotokoll."
+msgstr ""
+"%d invii non riusciti; la risposta del fornitore si trova nel log degli "
+"errori PHP."
+
+#: includes/Admin/AdminDashboard.php:293
+msgid "Übersicht"
+msgstr "Panoramica"
+
+#: includes/Admin/AdminDashboard.php:294
+msgid "Anmeldungen"
+msgstr "Iscrizioni"
+
+#: includes/Admin/AdminDashboard.php:295
+msgid "Einstellungen"
+msgstr "Impostazioni"
+
+#: includes/Admin/AdminDashboard.php:296
+msgid "Shortcode"
+msgstr "Shortcode"
+
+#: includes/Admin/AdminDashboard.php:312
+msgid ""
+"Newsletter-Anmeldung mit Double-Opt-In: Formular, Bestätigungsmail, "
+"Protokoll je Anmeldung und Übergabe bestätigter Adressen an den "
+"eingestellten Anbieter. Es ersetzt keine rechtliche Prüfung von "
+"Einwilligungstext und Versand."
+msgstr ""
+"Iscrizione newsletter con double opt-in: modulo, email di conferma, registro "
+"per iscrizione e trasferimento degli indirizzi confermati al fornitore "
+"impostato. Non sostituisce una verifica legale del consenso e dell'invio."
+
+#: includes/Admin/AdminDashboard.php:315
+msgid "Part of the WM Suite plugin family"
+msgstr "Parte della famiglia di plugin WM Suite"
+
+#: includes/Admin/AdminDashboard.php:317
+msgid "WM Suite"
+msgstr "WM Suite"
+
+#: includes/Admin/AdminDashboard.php:318
+msgid "Hub"
+msgstr "Hub"
+
+#: includes/Admin/AdminDashboard.php:318
+msgid "Standalone"
+msgstr "Autonomo"
+
+#: includes/Admin/AdminDashboard.php:325
+msgid "Übergabe jetzt ausführen"
+msgstr "Esegui trasferimento ora"
+
+#: includes/Admin/AdminDashboard.php:330
+msgid "Bereiche"
+msgstr "Sezioni"
+
+#: includes/Admin/AdminDashboard.php:338
+msgid "Einstellungen gespeichert."
+msgstr "Impostazioni salvate."
+
+#: includes/Admin/AdminDashboard.php:351
+msgid "Abonniert (lokale Tabelle)"
+msgstr "Iscritti (tabella locale)"
+
+#: includes/Admin/AdminDashboard.php:355
+msgid "Unbestätigte Anmeldungen"
+msgstr "Iscrizioni non confermate"
+
+#: includes/Admin/AdminDashboard.php:360
+msgid "Nur lokal geführt (keine Übergabe an einen Anbieter)"
+msgstr "Mantenuti solo localmente (nessun invio a un fornitore)"
+
+#: includes/Admin/AdminDashboard.php:363
+msgid "An den Anbieter übergeben"
+msgstr "Trasferiti al fornitore"
+
+#: includes/Admin/AdminDashboard.php:368
+msgid "Abgemeldet (lokale Tabelle)"
+msgstr "Disiscritti (tabella locale)"
+
+#: includes/Admin/AdminDashboard.php:373
+msgid "Stand dieser Website"
+msgstr "Stato di questo sito"
+
+#: includes/Admin/AdminDashboard.php:374
+msgid "Beim Aufruf dieser Seite gelesen."
+msgstr "Letto all'apertura di questa pagina."
+
+#: includes/Admin/AdminDashboard.php:378 includes/Admin/AdminDashboard.php:466
+#: includes/Admin/AdminDashboard.php:508
+msgid "Anbieter"
+msgstr "Fornitore"
+
+#. translators: %s: comma-separated setting names
+#: includes/Admin/AdminDashboard.php:385
+#, php-format
+msgid "Es fehlt: %s"
+msgstr "Manca: %s"
+
+#: includes/Admin/AdminDashboard.php:392
+msgid "An einen externen Anbieter übergeben"
+msgstr "Trasferiti a un fornitore esterno"
+
+#: includes/Admin/AdminDashboard.php:396
+msgid ""
+"Nur in der lokalen Tabelle geführt (Einstellung „Nur lokal“, nichts verlässt "
+"die Website)"
+msgstr ""
+"Mantenuti solo nella tabella locale (impostazione «Solo locale», nulla "
+"lascia il sito)"
+
+#: includes/Admin/AdminDashboard.php:400
+msgid "Bestätigt, wartet auf den nächsten Übergabe-Lauf"
+msgstr "Confermati, in attesa del prossimo trasferimento"
+
+#: includes/Admin/AdminDashboard.php:404
+msgid "Übergabe fehlgeschlagen (wird bei jedem Lauf erneut versucht)"
+msgstr "Trasferimento non riuscito (nuovo tentativo a ogni esecuzione)"
+
+#: includes/Admin/AdminDashboard.php:408
+msgid "Nicht übergeben, weil die Adresse lokal abgemeldet ist"
+msgstr "Non trasferiti perché l'indirizzo risulta disiscritto localmente"
+
+#: includes/Admin/AdminDashboard.php:412
+msgid "Nächster automatischer Übergabe-Lauf (WP-Cron, alle fünf Minuten)"
+msgstr "Prossimo trasferimento automatico (WP-Cron, ogni cinque minuti)"
+
+#: includes/Admin/AdminDashboard.php:413
+msgid "nicht geplant"
+msgstr "non pianificato"
+
+#: includes/Admin/AdminDashboard.php:416
+msgid "Bestätigungsfenster; danach werden unbestätigte Anmeldungen gelöscht"
+msgstr ""
+"Finestra di conferma; al termine le iscrizioni non confermate vengono "
+"eliminate"
+
+#. translators: %d: hours
+#: includes/Admin/AdminDashboard.php:420
+#, php-format
+msgid "%d Stunden"
+msgstr "%d ore"
+
+#: includes/Admin/AdminDashboard.php:425
+msgid "Proof-of-Work im Formular"
+msgstr "Proof-of-work nel modulo"
+
+#: includes/Admin/AdminDashboard.php:426 includes/Admin/AdminDashboard.php:430
+msgid "an"
+msgstr "attivo"
+
+#: includes/Admin/AdminDashboard.php:426 includes/Admin/AdminDashboard.php:430
+msgid "aus"
+msgstr "inattivo"
+
+#: includes/Admin/AdminDashboard.php:429
+msgid "List-Unsubscribe-Header in der Bestätigungsmail"
+msgstr "Intestazione List-Unsubscribe nell'email di conferma"
+
+#: includes/Admin/AdminDashboard.php:437
+msgid "Was das Plugin tut und was nicht"
+msgstr "Cosa fa il plugin e cosa non fa"
+
+#: includes/Admin/AdminDashboard.php:439
+msgid ""
+"Jede Anmeldung wird mit dem angezeigten Einwilligungstext, dessen SHA-256-"
+"Hash, einem geschlüsselten Hash der IP-Adresse und dem Zeitpunkt "
+"gespeichert. Die Zeilen sind in der Datenbank änderbar; es gibt keine "
+"Signatur oder Kette."
+msgstr ""
+"Ogni iscrizione viene salvata con il testo di consenso mostrato, il relativo "
+"hash SHA-256, un hash con chiave dell'indirizzo IP e la data/ora. Le righe "
+"nel database sono modificabili; non esiste firma né catena."
+
+#: includes/Admin/AdminDashboard.php:440
+msgid ""
+"Erst nach Aufruf des Bestätigungslinks wird die Adresse als abonniert "
+"geführt und beim nächsten Lauf an den Anbieter übergeben. Unbestätigte "
+"Anmeldungen werden nach dem Bestätigungsfenster gelöscht."
+msgstr ""
+"Solo dopo l'apertura del link di conferma l'indirizzo viene registrato come "
+"iscritto e trasferito al fornitore al ciclo successivo. Le iscrizioni non "
+"confermate vengono cancellate dopo la finestra di conferma."
+
+#: includes/Admin/AdminDashboard.php:441
+msgid ""
+"Eine Abmeldung über den Link aus der Bestätigungsmail oder über den Webhook "
+"ändert nur die lokale Tabelle. Beim Anbieter bereits übergebene Kontakte "
+"bleiben dort angemeldet."
+msgstr ""
+"La disiscrizione tramite il link nell'email o tramite webhook aggiorna solo "
+"la tabella locale. I contatti già inviati al fornitore restano iscritti "
+"presso di esso."
+
+#: includes/Admin/AdminDashboard.php:442
+msgid "Newsletter versendet das Plugin nicht; das macht der Anbieter."
+msgstr "Il plugin non invia newsletter; se ne occupa il fornitore."
+
+#: includes/Admin/AdminDashboard.php:443
+msgid ""
+"Ob Einwilligungstext, Bestätigungsmail und Anbieter den rechtlichen "
+"Anforderungen genügen, beurteilt das Plugin nicht."
+msgstr ""
+"Il plugin non valuta se il testo di consenso, l'email di conferma o il "
+"fornitore soddisfino i requisiti di legge."
+
+#: includes/Admin/AdminDashboard.php:451
+msgid "Letzte 50 Anmeldungen"
+msgstr "Ultime 50 iscrizioni"
+
+#: includes/Admin/AdminDashboard.php:455
+msgid "CSV-Export (bis 5.000 Zeilen)"
+msgstr "Esportazione CSV (fino a 5.000 righe)"
+
+#: includes/Admin/AdminDashboard.php:461
+msgid "ID"
+msgstr "ID"
+
+#: includes/Admin/AdminDashboard.php:462
+msgid "E-Mail"
+msgstr "Email"
+
+#: includes/Admin/AdminDashboard.php:463
+msgid "IP-Hash"
+msgstr "Hash IP"
+
+#: includes/Admin/AdminDashboard.php:464
+msgid "Hash des Einwilligungstexts"
+msgstr "Hash del consenso"
+
+#: includes/Admin/AdminDashboard.php:465
+msgid "Status"
+msgstr "Stato"
+
+#: includes/Admin/AdminDashboard.php:467
+msgid "Angemeldet"
+msgstr "Registrato"
+
+#: includes/Admin/AdminDashboard.php:468
+msgid "Bestätigt"
+msgstr "Confermato"
+
+#: includes/Admin/AdminDashboard.php:473
+msgid "Keine Anmeldungen vorhanden."
+msgstr "Nessuna iscrizione presente."
+
+#: includes/Admin/AdminDashboard.php:506
+msgid "Allgemein und Absender"
+msgstr "Generale e mittente"
+
+#: includes/Admin/AdminDashboard.php:516
+msgid "Absendername"
+msgstr "Nome mittente"
+
+#: includes/Admin/AdminDashboard.php:520
+msgid "Absenderadresse"
+msgstr "Indirizzo mittente"
+
+#: includes/Admin/AdminDashboard.php:524
+msgid "Betreff der Bestätigungsmail"
+msgstr "Oggetto dell'email di conferma"
+
+#: includes/Admin/AdminDashboard.php:528
+msgid ""
+"Bestätigungsfenster in Stunden (1–168); danach werden unbestätigte "
+"Anmeldungen gelöscht"
+msgstr ""
+"Finestra di conferma in ore (1–168); al termine le iscrizioni non confermate "
+"vengono eliminate"
+
+#: includes/Admin/AdminDashboard.php:532
+msgid "Impressum-URL (Fuß der Bestätigungsmail)"
+msgstr "URL note legali (piè di pagina dell'email)"
+
+#: includes/Admin/AdminDashboard.php:536
+msgid "Datenschutzerklärung-URL (Formular und Mail)"
+msgstr "URL informativa privacy (modulo ed email)"
+
+#: includes/Admin/AdminDashboard.php:542
+msgid ""
+"Proof-of-Work im Formular verlangen (der Browser rechnet vor dem Absenden; "
+"ohne HTTPS nicht möglich)"
+msgstr ""
+"Richiedi proof-of-work nel modulo (il browser calcola prima dell'invio; "
+"richiede HTTPS)"
+
+#: includes/Admin/AdminDashboard.php:548
+msgid ""
+"List-Unsubscribe- und List-Unsubscribe-Post-Header in die Bestätigungsmail "
+"setzen"
+msgstr ""
+"Inserisci le intestazioni List-Unsubscribe e List-Unsubscribe-Post "
+"nell'email di conferma"
+
+#: includes/Admin/AdminDashboard.php:554
+msgid "Zugangsdaten der Anbieter"
+msgstr "Credenziali dei fornitori"
+
+#: includes/Admin/AdminDashboard.php:556
+msgid "Brevo API-Schlüssel"
+msgstr "Chiave API Brevo"
+
+#: includes/Admin/AdminDashboard.php:560
+msgid "Rapidmail API-Benutzer"
+msgstr "Utente API Rapidmail"
+
+#: includes/Admin/AdminDashboard.php:564
+msgid "Rapidmail API-Passwort"
+msgstr "Password API Rapidmail"
+
+#: includes/Admin/AdminDashboard.php:568
+msgid "CleverReach REST-Token"
+msgstr "Token REST CleverReach"
+
+#: includes/Admin/AdminDashboard.php:572
+msgid "Kit API-Schlüssel (v4)"
+msgstr "Chiave API Kit (v4)"
+
+#: includes/Admin/AdminDashboard.php:576
+msgid "Mailchimp API-Schlüssel (mit Rechenzentrum, z. B. …-us6)"
+msgstr "Chiave API Mailchimp (con data center, es. …-us6)"
+
+#: includes/Admin/AdminDashboard.php:580
+msgid ""
+"Standard-Liste bzw. Gruppen-ID (Rapidmail, CleverReach und Mailchimp "
+"brauchen eine echte ID)"
+msgstr ""
+"ID lista o gruppo predefinito (Rapidmail, CleverReach e Mailchimp richiedono "
+"un ID reale)"
+
+#: includes/Admin/AdminDashboard.php:586
+msgid "Webhook für Abmeldungen beim Anbieter"
+msgstr "Webhook per disiscrizioni presso il fornitore"
+
+#: includes/Admin/AdminDashboard.php:587
+msgid ""
+"Tragen Sie diese Adresse beim Anbieter ein. Ein Ereignis unsubscribe, spam, "
+"contact_deleted, unsub, complaint oder deleted (oder keines) mit einer E-"
+"Mail-Adresse setzt den lokalen Eintrag auf abgemeldet. Die Adresse enthält "
+"den Schlüssel: nicht weitergeben."
+msgstr ""
+"Inserisca questo indirizzo presso il fornitore. Un evento unsubscribe, spam, "
+"contact_deleted, unsub, complaint o deleted (oppure nessuno) con un "
+"indirizzo email imposta la voce locale su disiscritto. L'indirizzo contiene "
+"la chiave segreta: non condividerlo."
+
+#: includes/Admin/AdminDashboard.php:589
+msgid "Webhook-URL"
+msgstr "URL webhook"
+
+#: includes/Admin/AdminDashboard.php:595
+msgid "Deinstallation und Datenaufbewahrung"
+msgstr "Disinstallazione e conservazione dei dati"
+
+#: includes/Admin/AdminDashboard.php:596
+msgid ""
+"Standardmäßig bleiben Einstellungen, Abonnenten und Einwilligungsprotokolle "
+"beim Löschen des Plugins erhalten."
+msgstr ""
+"Per impostazione predefinita, impostazioni, iscritti e registri di consenso "
+"vengono conservati alla rimozione del plugin."
+
+#: includes/Admin/AdminDashboard.php:600
+msgid ""
+"Alle Einstellungen, Abonnenten und Einwilligungsprotokolle beim "
+"Deinstallieren unwiderruflich löschen"
+msgstr ""
+"Elimina definitivamente impostazioni, iscritti e registri di consenso "
+"durante la disinstallazione"
+
+#: includes/Admin/AdminDashboard.php:605
+msgid "Einstellungen speichern"
+msgstr "Salva impostazioni"
+
+#: includes/Admin/AdminDashboard.php:610
+msgid "Formular einbinden"
+msgstr "Incorpora modulo"
+
+#: includes/Admin/AdminDashboard.php:611
+msgid ""
+"Der Shortcode gibt das Anmeldeformular mit Einwilligungs-Checkbox und Link "
+"zur Datenschutzerklärung aus. Einen Gutenberg-Block gibt es nicht."
+msgstr ""
+"Lo shortcode mostra il modulo di iscrizione con casella di consenso e link "
+"all'informativa sulla privacy. Non è previsto alcun blocco Gutenberg."
+
+#: includes/Admin/AdminDashboard.php:616
+msgid "Attribut"
+msgstr "Attributo"
+
+#: includes/Admin/AdminDashboard.php:617
+msgid "Standardwert"
+msgstr "Valore predefinito"
+
+#: includes/Admin/AdminDashboard.php:618
+msgid "Bedeutung"
+msgstr "Significato"
+
+#: includes/Admin/AdminDashboard.php:622
+msgid "Überschrift des Formulars"
+msgstr "Titolo del modulo"
+
+#: includes/Admin/AdminDashboard.php:623
+msgid "Text unter der Überschrift; leer bleibt er weg"
+msgstr "Testo sotto il titolo; se vuoto viene omesso"
+
+#: includes/Admin/AdminDashboard.php:624
+msgid ""
+"Liste beim Anbieter; ohne Angabe (oder mit dem Wert default) gilt die "
+"Standard-Liste aus den Einstellungen"
+msgstr ""
+"Lista presso il fornitore; se omesso (o impostato su default) vale la lista "
+"predefinita delle impostazioni"
+
+#: includes/Admin/AdminDashboard.php:625
+msgid ""
+"art_6_1_a oder art_6_1_b; wird mit der Anmeldung gespeichert, das Plugin "
+"prüft sie nicht"
+msgstr ""
+"art_6_1_a oppure art_6_1_b; salvato con l'iscrizione senza verifica legale"
+
+#: includes/Admin/AdminDashboard.php:626
+msgid "Beschriftung des Absende-Buttons"
+msgstr "Etichetta del pulsante di invio"
+
+#: includes/Admin/SettingsManager.php:41 includes/Core/Activator.php:54
+#: includes/Mailer/DoiMailer.php:48
+msgid "Bitte bestätigen Sie Ihre Anmeldung"
+msgstr "Conferma la tua iscrizione"
+
+#: includes/Database/DoiRepository.php:147
+msgid "Ungültiger oder nicht gefundener Bestätigungstoken."
+msgstr "Token di conferma non valido o non trovato."
+
+#: includes/Database/DoiRepository.php:158
+msgid "Ihre E-Mail-Adresse wurde bereits erfolgreich bestätigt."
+msgstr "Il tuo indirizzo email è già stato confermato."
+
+#: includes/Database/DoiRepository.php:168
+msgid "Dieser Bestätigungslink ist nicht mehr gültig."
+msgstr "Questo link di conferma non è più valido."
+
+#. translators: %d: hours a confirmation link stays valid
+#: includes/Database/DoiRepository.php:186
+#, php-format
+msgid ""
+"Der Bestätigungslink ist abgelaufen (gültig %d Stunden). Bitte melden Sie "
+"sich erneut an."
+msgstr ""
+"Il link di conferma è scaduto (valido %d ore). Effettua nuovamente "
+"l'iscrizione."
+
+#: includes/Database/DoiRepository.php:229
+msgid "Vielen Dank! Ihre E-Mail-Adresse wurde erfolgreich bestätigt."
+msgstr "Grazie! Il tuo indirizzo email è stato confermato con successo."
+
+#: includes/Domain/Enum/SubscriberStatus.php:18
+msgid "Aktiv abonniert"
+msgstr "Iscritto attivo"
+
+#: includes/Domain/Enum/SubscriberStatus.php:19
+msgid "Abgemeldet"
+msgstr "Disiscritto"
+
+#: includes/Domain/Enum/SubscriberStatus.php:20
+msgid "Bereinigt / Gelöscht"
+msgstr "Ripulito / Eliminato"
+
+#: includes/Domain/Enum/SubscriberStatus.php:21
+msgid "Unbekannter Status"
+msgstr "Stato sconosciuto"
+
+#: includes/Frontend/EcosystemIntegrations.php:52
+msgid "WM Newsletter Statistik"
+msgstr "Statistiche Newsletter WM"
+
+#: includes/Frontend/EcosystemIntegrations.php:63
+msgid "Newsletter-Statistik"
+msgstr "Statistiche newsletter"
+
+#: includes/Frontend/EcosystemIntegrations.php:70
+msgid "Kennzahl"
+msgstr "Metrica"
+
+#. translators: %s: Privacy policy URL
+#: includes/Frontend/FormRenderer.php:49
+#, php-format
+msgid ""
+"Ich willige in die Verarbeitung meiner E-Mail-Adresse zum Zweck des "
+"Newsletter-Versands ein. Der Widerruf ist gem. Art. 7 Abs. 3 DSGVO jederzeit "
+"möglich (<a href=\"%s\" target=\"_blank\" "
+"rel=\"noopener\">Datenschutzerklärung</a>)."
+msgstr ""
+"Acconsento al trattamento del mio indirizzo email per l'invio della "
+"newsletter. La revoca è possibile in qualsiasi momento ai sensi dell'art. 7 "
+"par. 3 GDPR (<a href=\"%s\" target=\"_blank\" rel=\"noopener\">Informativa "
+"sulla privacy</a>)."
+
+#: includes/Frontend/FormRenderer.php:87
+msgid "Wird übermittelt …"
+msgstr "Invio in corso…"
+
+#: includes/Frontend/FormRenderer.php:88
+msgid "Sicherheitsprüfung läuft …"
+msgstr "Controllo di sicurezza in corso…"
+
+#: includes/Frontend/FormRenderer.php:89
+msgid "Bestätigungslink wurde gesendet. Bitte prüfen Sie Ihr Postfach."
+msgstr "Link di conferma inviato. Controlla la tua casella di posta."
+
+#: includes/Frontend/FormRenderer.php:90
+msgid "Ein Fehler ist aufgetreten. Bitte versuchen Sie es erneut."
+msgstr "Si è verificato un errore. Riprova."
+
+#: includes/Frontend/FormRenderer.php:91
+#: includes/REST/SubscriptionController.php:196
+msgid "Bitte bestätigen Sie die Einwilligung."
+msgstr "Conferma il consenso."
+
+#: includes/Frontend/FormRenderer.php:92
+msgid ""
+"Ihr Browser kann die Sicherheitsprüfung nicht ausführen (nur über HTTPS "
+"verfügbar)."
+msgstr ""
+"Il browser non può eseguire il controllo di sicurezza (disponibile solo "
+"tramite HTTPS)."
+
+#: includes/Frontend/FormRenderer.php:106
+msgid "Newsletter abonnieren"
+msgstr "Iscriviti alla newsletter"
+
+#: includes/Frontend/FormRenderer.php:112
+msgid "Anmelden"
+msgstr "Iscriviti"
+
+#: includes/Frontend/FormRenderer.php:140
+#: includes/Frontend/FormRenderer.php:141
+msgid "Nicht ausfüllen"
+msgstr "Non compilare"
+
+#: includes/Frontend/FormRenderer.php:146
+msgid "E-Mail-Adresse"
+msgstr "Indirizzo email"
+
+#: includes/Frontend/FormRenderer.php:187
+msgid "E-Mail-Adresse bestätigt"
+msgstr "Indirizzo email confermato"
+
+#: includes/Frontend/FormRenderer.php:187
+msgid "Bestätigung nicht möglich"
+msgstr "Conferma non possibile"
+
+#: includes/Frontend/FormRenderer.php:190
+msgid "Zur Startseite"
+msgstr "Torna alla pagina iniziale"
+
+#. translators: %d: hours an unconfirmed address is kept
+#: includes/Mailer/DoiMailer.php:56
+#, php-format
+msgid ""
+"Falls Sie diese Anfrage nicht ausgelöst haben, können Sie diese E-Mail "
+"ignorieren. Ohne Bestätigung wird Ihre Adresse nach %d Stunden gelöscht."
+msgstr ""
+"Se non hai richiesto questa iscrizione, puoi ignorare questa email. Senza "
+"conferma il tuo indirizzo verrà eliminato dopo %d ore."
+
+#: includes/Mailer/DoiMailer.php:64
+msgid "Bestätigung Ihrer E-Mail-Adresse"
+msgstr "Conferma del tuo indirizzo email"
+
+#: includes/Mailer/DoiMailer.php:65
+msgid ""
+"Sie haben sich mit dieser E-Mail-Adresse für unseren Newsletter angemeldet. "
+"Um Ihre Anmeldung abzuschließen und den Empfang zu aktivieren, klicken Sie "
+"bitte auf den folgenden Bestätigungslink:"
+msgstr ""
+"Ti sei iscritto alla nostra newsletter con questo indirizzo email. Per "
+"completare l'iscrizione e attivare la ricezione, fai clic sul seguente link "
+"di conferma:"
+
+#: includes/Mailer/DoiMailer.php:68
+msgid "Anmeldung bestätigen"
+msgstr "Conferma iscrizione"
+
+#: includes/Mailer/DoiMailer.php:75
+msgid "Impressum"
+msgstr "Note legali"
+
+#: includes/Mailer/DoiMailer.php:76
+msgid "Datenschutzerklärung"
+msgstr "Informativa sulla privacy"
+
+#: includes/Queue/SyncQueue.php:74
+msgid "Alle fünf Minuten"
+msgstr "Ogni cinque minuti"
+
+#: includes/REST/SubscriptionController.php:71
+#: includes/REST/SubscriptionController.php:94
+#: includes/REST/SubscriptionController.php:154
+#: includes/REST/SubscriptionController.php:282
+msgid "Zu viele Anfragen. Bitte warten Sie einen Moment."
+msgstr "Troppe richieste. Attendi un momento."
+
+#: includes/REST/SubscriptionController.php:166
+msgid "Vielen Dank für Ihre Anmeldung! Bitte prüfen Sie Ihr Postfach."
+msgstr "Grazie per l'iscrizione! Controlla la tua casella di posta."
+
+#: includes/REST/SubscriptionController.php:179
+msgid "Sicherheitsüberprüfung fehlgeschlagen (Proof-of-Work ungültig)."
+msgstr "Controllo di sicurezza non riuscito (proof-of-work non valido)."
+
+#: includes/REST/SubscriptionController.php:189
+msgid "Bitte geben Sie eine gültige E-Mail-Adresse ein."
+msgstr "Inserisci un indirizzo email valido."
+
+#: includes/REST/SubscriptionController.php:204
+msgid "Das Formular ist ungültig. Bitte laden Sie die Seite neu."
+msgstr "Il modulo non è valido. Ricarica la pagina."
+
+#: includes/REST/SubscriptionController.php:235
+msgid ""
+"Die Anmeldung konnte nicht gespeichert werden. Bitte versuchen Sie es später."
+msgstr "Impossibile salvare l'iscrizione. Riprova più tardi."
+
+#: includes/REST/SubscriptionController.php:247
+msgid ""
+"Die Bestätigungs-E-Mail konnte nicht versendet werden. Bitte versuchen Sie "
+"es später."
+msgstr "Impossibile inviare l'email di conferma. Riprova più tardi."
+
+#: includes/REST/SubscriptionController.php:253
+msgid ""
+"Fast geschafft! Wir haben Ihnen einen Bestätigungslink per E-Mail gesendet."
+msgstr "Ci siamo quasi! Ti abbiamo inviato un link di conferma via email."
+
+#: includes/REST/SubscriptionController.php:290
+msgid "Bitte geben Sie eine gültige E-Mail-Adresse an."
+msgstr "Indica un indirizzo email valido."
+
+#: includes/REST/SubscriptionController.php:298
+msgid ""
+"Der Abmeldelink ist ungültig oder abgelaufen. Bitte nutzen Sie den Link aus "
+"Ihrer E-Mail."
+msgstr ""
+"Il link di disiscrizione non è valido o è scaduto. Usa il link presente "
+"nella tua email."
+
+#: includes/REST/SubscriptionController.php:306
+msgid "Sie wurden erfolgreich vom Newsletter abgemeldet."
+msgstr "Sei stato disiscritto correttamente dalla newsletter."
+
+#. translators: %s: incident reference the visitor can quote to support
+#: includes/Security/ErrorSanitizer.php:28
+#, php-format
+msgid "Ein Systemfehler ist aufgetreten. Referenznummer: %s"
+msgstr "Si è verificato un errore di sistema. Numero di riferimento: %s"
+
+#: includes/Security/RequestShield.php:54
+msgid "Die Anfrage wurde abgelehnt."
+msgstr "La richiesta è stata rifiutata."
+
+#~ msgid "https://www.arnoldwender.com"
+#~ msgstr "https://www.arnoldwender.com"

@@ -1,0 +1,30 @@
+# WM DSGVO Newsletter Suite
+
+> WordPress plugin for double opt-in newsletter sign-ups: a form with a consent checkbox and a browser proof of work, a confirmation mail, one record per sign-up (consent text, its SHA-256, HMAC of the IP) and a server-side push of confirmed addresses to Brevo, Rapidmail, CleverReach, Kit or Mailchimp every five minutes. It sends no newsletters, does not pass unsubscribes on to the provider and makes no legal assessment.
+
+## Overview
+
+
+- Shortcode: `[wm_dsgvo_newsletter]` (`title`, `description`, `list_id`, `legal_basis`, `button_text`)
+- REST: `wm-newsletter/v1` — `POST /subscribe`, `GET /altcha-challenge`, `GET|POST /unsubscribe` (token), `GET|POST /webhook` (key); public routes guarded by IP HMAC-SHA256 rate limiting (`check_public_subscription_access`)
+- Confirmation link: `/?wm_action=confirm_newsletter&token=…`
+- WP-CLI: `wp wm-newsletter sync`, `purge-expired` (`purge`), `stats`
+- Hooks: actions `wm_newsletter_ready`, `wm_newsletter_confirmed`; filters `wm_newsletter_rest_rate_limit`, `wm_newsletter_subscriber_payload`
+- Block Integrations: WordPress 6.5+ Block Bindings `wm-newsletter/stats`, GenerateBlocks 2.x Dynamic Tag `{{wm_newsletter_stat}}`
+- Storage: `wp_wm_newsletter_doi_staging`, `wp_wm_newsletter_subscribers`, options `wm_newsletter_settings` and `wm_newsletter_delete_data_on_uninstall` (default `0`, opt-in deletion on uninstall)
+- Cron: `wm_newsletter_process_sync_queue` (every five minutes), `wm_newsletter_hourly_cleanup` (hourly)
+- Documentation measured against the code: README.md, DEVELOPERS.md
+- Version 1.2.2.
+
+## Standards
+
+- PHP 8.2+ / Strict Types / PSR-12 / WPCS
+- Self-hosted assets in `/assets/`
+- Prepared SQL, constant-time token and signature comparison, keyed IP hashes in records and REST access transients
+- License: GPLv2 or later (`GPL-2.0-or-later`)
+
+## Official Links
+
+- Plugin Page: https://arnoldwender.com/wordpress-plugins/wm-dsgvo-newsletter-suite/
+- GitHub Repository: https://github.com/arnoldwender/wm-wp-dsgvo-newsletter-suite
+- Support & Liability: Zero support — reproducible bugs on https://github.com/arnoldwender/wm-wp-dsgvo-newsletter-suite/issues only · no private support · AS IS / no liability (SUPPORT.md)

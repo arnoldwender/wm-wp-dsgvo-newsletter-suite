@@ -1,0 +1,793 @@
+# Translation of wm-dsgvo-newsletter-suite in ro_RO
+# Copyright (C) 2026 Arnold Wender
+# This file is distributed under the GPLv2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: wm-dsgvo-newsletter-suite 1.2.1\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wm-dsgvo-"
+"newsletter-suite\n"
+"POT-Creation-Date: 2026-11-21T13:12:17+00:00\n"
+"PO-Revision-Date: 2026-11-21 14:12+0100\n"
+"Last-Translator: WM Suite <https://github.com/arnoldwender/wm-wp-dsgvo-"
+"newsletter-suite/issues>\n"
+"Language-Team: WM Suite <https://github.com/arnoldwender/wm-wp-dsgvo-"
+"newsletter-suite/issues>\n"
+"Language: ro_RO\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n==1 ? 0 : (n==0 || (n%100>0 && "
+"n%100<20)) ? 1 : 2);\n"
+"X-Generator: WM Suite i18n Compiler 2026\n"
+"X-Domain: wm-dsgvo-newsletter-suite\n"
+
+#. Plugin Name of the plugin
+#: wm-dsgvo-newsletter-suite.php includes/Admin/AdminDashboard.php:74
+#: includes/Admin/AdminDashboard.php:311
+msgid "WM DSGVO Newsletter Suite"
+msgstr "WM Suită Newsletter GDPR"
+
+#. Plugin URI of the plugin
+#: wm-dsgvo-newsletter-suite.php
+msgid "https://arnoldwender.com/wordpress-plugins/wm-dsgvo-newsletter-suite/"
+msgstr "https://arnoldwender.com/wordpress-plugins/wm-dsgvo-newsletter-suite/"
+
+#. Description of the plugin
+#: wm-dsgvo-newsletter-suite.php
+msgid ""
+"Newsletter-Anmeldung mit Double-Opt-In: Formular mit Einwilligungs-Checkbox "
+"und Proof-of-Work, Bestätigungsmail, Protokoll je Anmeldung "
+"(Einwilligungstext, Hash, geschlüsselter IP-Hash) und serverseitige Übergabe "
+"bestätigter Adressen an Brevo, Rapidmail, CleverReach, Kit oder Mailchimp. "
+"Keine rechtliche Bewertung."
+msgstr ""
+"Abonare la newsletter cu dublă confirmare (double opt-in): formular cu "
+"casetă de consimțământ și proof-of-work, e-mail de confirmare, jurnal per "
+"înscriere (text consimțământ, hash, hash IP cu cheie) și transmitere pe "
+"server a adreselor confirmate către Brevo, Rapidmail, CleverReach, Kit sau "
+"Mailchimp. Fără evaluare juridică."
+
+#. Author of the plugin
+#: wm-dsgvo-newsletter-suite.php
+msgid "Arnold Wender"
+msgstr "Arnold Wender"
+
+#. Author URI of the plugin
+#: wm-dsgvo-newsletter-suite.php
+msgid "https://arnoldwender.com"
+msgstr "https://arnoldwender.com"
+
+#: includes/Admin/AdminDashboard.php:49
+msgid "Nur lokal (keine Übergabe an einen Anbieter)"
+msgstr "Doar local (fără transmitere către furnizor)"
+
+#: includes/Admin/AdminDashboard.php:93
+msgid "Anbieter nicht vollständig eingerichtet"
+msgstr "Furnizorul nu este complet configurat"
+
+#: includes/Admin/AdminDashboard.php:95
+msgid "Übergaben an den Anbieter fehlgeschlagen"
+msgstr "Transmiterile către furnizor au eșuat"
+
+#: includes/Admin/AdminDashboard.php:97
+msgid "Double-Opt-In aktiv"
+msgstr "Double opt-in activ"
+
+#: includes/Admin/AdminDashboard.php:108
+msgid "Abonniert"
+msgstr "Abonați"
+
+#: includes/Admin/AdminDashboard.php:112
+msgid "Unbestätigt"
+msgstr "Neconfirmați"
+
+#: includes/Admin/AdminDashboard.php:116
+msgid "Übergabe fehlgeschlagen"
+msgstr "Transmitere eșuată"
+
+#: includes/Admin/AdminDashboard.php:122
+msgid "Newsletter Suite öffnen"
+msgstr "Deschide Suita Newsletter"
+
+#: includes/Admin/AdminDashboard.php:141
+msgid "WM DSGVO Newsletter"
+msgstr "WM Newsletter GDPR"
+
+#: includes/Admin/AdminDashboard.php:142
+msgid "DSGVO Newsletter"
+msgstr "Newsletter GDPR"
+
+#: includes/Admin/AdminDashboard.php:177 includes/Admin/AdminDashboard.php:211
+#: includes/Admin/AdminDashboard.php:229
+msgid "Keine Berechtigung."
+msgstr "Permisiuni insuficiente."
+
+#: includes/Admin/AdminDashboard.php:267
+msgid "Keine bestätigte Anmeldung wartete auf Übergabe."
+msgstr "Nicio abonare confirmată nu aștepta transmiterea."
+
+#. translators: %d: number of contacts an external provider accepted
+#: includes/Admin/AdminDashboard.php:272
+#, php-format
+msgid "%d Kontakte an den Anbieter übergeben."
+msgstr "%d contacte transmise furnizorului."
+
+#. translators: %d: number of confirmed addresses kept in the local table
+#: includes/Admin/AdminDashboard.php:276
+#, php-format
+msgid ""
+"%d bestätigte Adressen nur in der lokalen Tabelle geführt (Einstellung „Nur "
+"lokal“, nichts verlässt die Website)."
+msgstr ""
+"%d adrese confirmate păstrate exclusiv în tabelul local (opțiunea „Doar "
+"local”, nimic nu părăsește site-ul)."
+
+#. translators: %d: number of failed pushes
+#: includes/Admin/AdminDashboard.php:280
+#, php-format
+msgid ""
+"%d Übergaben fehlgeschlagen; die Antwort des Anbieters steht im PHP-"
+"Fehlerprotokoll."
+msgstr ""
+"%d transmiteri eșuate; răspunsul furnizorului se află în jurnalul de erori "
+"PHP."
+
+#: includes/Admin/AdminDashboard.php:293
+msgid "Übersicht"
+msgstr "Prezentare generală"
+
+#: includes/Admin/AdminDashboard.php:294
+msgid "Anmeldungen"
+msgstr "Înscrieri"
+
+#: includes/Admin/AdminDashboard.php:295
+msgid "Einstellungen"
+msgstr "Setări"
+
+#: includes/Admin/AdminDashboard.php:296
+msgid "Shortcode"
+msgstr "Shortcode"
+
+#: includes/Admin/AdminDashboard.php:312
+msgid ""
+"Newsletter-Anmeldung mit Double-Opt-In: Formular, Bestätigungsmail, "
+"Protokoll je Anmeldung und Übergabe bestätigter Adressen an den "
+"eingestellten Anbieter. Es ersetzt keine rechtliche Prüfung von "
+"Einwilligungstext und Versand."
+msgstr ""
+"Abonare la newsletter cu double opt-in: formular, e-mail de confirmare, "
+"jurnal per înscriere și transmiterea adreselor confirmate către furnizorul "
+"configurat. Nu înlocuiește verificarea juridică a consimțământului și a "
+"expedierii."
+
+#: includes/Admin/AdminDashboard.php:315
+msgid "Part of the WM Suite plugin family"
+msgstr "Parte din familia de module WM Suite"
+
+#: includes/Admin/AdminDashboard.php:317
+msgid "WM Suite"
+msgstr "WM Suite"
+
+#: includes/Admin/AdminDashboard.php:318
+msgid "Hub"
+msgstr "Hub"
+
+#: includes/Admin/AdminDashboard.php:318
+msgid "Standalone"
+msgstr "Independent"
+
+#: includes/Admin/AdminDashboard.php:325
+msgid "Übergabe jetzt ausführen"
+msgstr "Rulează transmiterea acum"
+
+#: includes/Admin/AdminDashboard.php:330
+msgid "Bereiche"
+msgstr "Secțiuni"
+
+#: includes/Admin/AdminDashboard.php:338
+msgid "Einstellungen gespeichert."
+msgstr "Setările au fost salvate."
+
+#: includes/Admin/AdminDashboard.php:351
+msgid "Abonniert (lokale Tabelle)"
+msgstr "Abonați (tabel local)"
+
+#: includes/Admin/AdminDashboard.php:355
+msgid "Unbestätigte Anmeldungen"
+msgstr "Înscrieri neconfirmate"
+
+#: includes/Admin/AdminDashboard.php:360
+msgid "Nur lokal geführt (keine Übergabe an einen Anbieter)"
+msgstr "Păstrate doar local (fără transmitere către furnizor)"
+
+#: includes/Admin/AdminDashboard.php:363
+msgid "An den Anbieter übergeben"
+msgstr "Transmise furnizorului"
+
+#: includes/Admin/AdminDashboard.php:368
+msgid "Abgemeldet (lokale Tabelle)"
+msgstr "Dezabonați (tabel local)"
+
+#: includes/Admin/AdminDashboard.php:373
+msgid "Stand dieser Website"
+msgstr "Starea acestui site"
+
+#: includes/Admin/AdminDashboard.php:374
+msgid "Beim Aufruf dieser Seite gelesen."
+msgstr "Citită la deschiderea acestei pagini."
+
+#: includes/Admin/AdminDashboard.php:378 includes/Admin/AdminDashboard.php:466
+#: includes/Admin/AdminDashboard.php:508
+msgid "Anbieter"
+msgstr "Furnizor"
+
+#. translators: %s: comma-separated setting names
+#: includes/Admin/AdminDashboard.php:385
+#, php-format
+msgid "Es fehlt: %s"
+msgstr "Lipsește: %s"
+
+#: includes/Admin/AdminDashboard.php:392
+msgid "An einen externen Anbieter übergeben"
+msgstr "Transmise unui furnizor extern"
+
+#: includes/Admin/AdminDashboard.php:396
+msgid ""
+"Nur in der lokalen Tabelle geführt (Einstellung „Nur lokal“, nichts verlässt "
+"die Website)"
+msgstr ""
+"Păstrate doar în tabelul local (opțiunea „Doar local”, nimic nu părăsește "
+"site-ul)"
+
+#: includes/Admin/AdminDashboard.php:400
+msgid "Bestätigt, wartet auf den nächsten Übergabe-Lauf"
+msgstr "Confirmate, în așteptarea următoarei transmiteri"
+
+#: includes/Admin/AdminDashboard.php:404
+msgid "Übergabe fehlgeschlagen (wird bei jedem Lauf erneut versucht)"
+msgstr "Transmitere eșuată (reîncercată la fiecare rulare)"
+
+#: includes/Admin/AdminDashboard.php:408
+msgid "Nicht übergeben, weil die Adresse lokal abgemeldet ist"
+msgstr "Netransmise deoarece adresa este dezabonată local"
+
+#: includes/Admin/AdminDashboard.php:412
+msgid "Nächster automatischer Übergabe-Lauf (WP-Cron, alle fünf Minuten)"
+msgstr "Următoarea transmitere automată (WP-Cron, la fiecare cinci minute)"
+
+#: includes/Admin/AdminDashboard.php:413
+msgid "nicht geplant"
+msgstr "neprogramată"
+
+#: includes/Admin/AdminDashboard.php:416
+msgid "Bestätigungsfenster; danach werden unbestätigte Anmeldungen gelöscht"
+msgstr "Fereastră de confirmare; ulterior înscrierile neconfirmate sunt șterse"
+
+#. translators: %d: hours
+#: includes/Admin/AdminDashboard.php:420
+#, php-format
+msgid "%d Stunden"
+msgstr "%d ore"
+
+#: includes/Admin/AdminDashboard.php:425
+msgid "Proof-of-Work im Formular"
+msgstr "Proof-of-work în formular"
+
+#: includes/Admin/AdminDashboard.php:426 includes/Admin/AdminDashboard.php:430
+msgid "an"
+msgstr "pornit"
+
+#: includes/Admin/AdminDashboard.php:426 includes/Admin/AdminDashboard.php:430
+msgid "aus"
+msgstr "oprit"
+
+#: includes/Admin/AdminDashboard.php:429
+msgid "List-Unsubscribe-Header in der Bestätigungsmail"
+msgstr "Antet List-Unsubscribe în e-mailul de confirmare"
+
+#: includes/Admin/AdminDashboard.php:437
+msgid "Was das Plugin tut und was nicht"
+msgstr "Ce face modulul și ce nu face"
+
+#: includes/Admin/AdminDashboard.php:439
+msgid ""
+"Jede Anmeldung wird mit dem angezeigten Einwilligungstext, dessen SHA-256-"
+"Hash, einem geschlüsselten Hash der IP-Adresse und dem Zeitpunkt "
+"gespeichert. Die Zeilen sind in der Datenbank änderbar; es gibt keine "
+"Signatur oder Kette."
+msgstr ""
+"Fiecare înscriere este salvată împreună cu textul de consimțământ afișat, "
+"hash-ul SHA-256 al acestuia, un hash cu cheie al adresei IP și momentul "
+"înscrierii. Rândurile din baza de date pot fi modificate; nu există "
+"semnătură sau lanț."
+
+#: includes/Admin/AdminDashboard.php:440
+msgid ""
+"Erst nach Aufruf des Bestätigungslinks wird die Adresse als abonniert "
+"geführt und beim nächsten Lauf an den Anbieter übergeben. Unbestätigte "
+"Anmeldungen werden nach dem Bestätigungsfenster gelöscht."
+msgstr ""
+"Abia după accesarea linkului de confirmare adresa devine abonată și este "
+"transmisă furnizorului la rularea următoare. Înscrierile neconfirmate sunt "
+"șterse după expirarea ferestrei."
+
+#: includes/Admin/AdminDashboard.php:441
+msgid ""
+"Eine Abmeldung über den Link aus der Bestätigungsmail oder über den Webhook "
+"ändert nur die lokale Tabelle. Beim Anbieter bereits übergebene Kontakte "
+"bleiben dort angemeldet."
+msgstr ""
+"Dezabonarea prin linkul din e-mailul de confirmare sau prin webhook modifică "
+"doar tabelul local. Contactele deja transmise furnizorului rămân abonate "
+"acolo."
+
+#: includes/Admin/AdminDashboard.php:442
+msgid "Newsletter versendet das Plugin nicht; das macht der Anbieter."
+msgstr "Modulul nu trimite newslettere; de aceasta se ocupă furnizorul."
+
+#: includes/Admin/AdminDashboard.php:443
+msgid ""
+"Ob Einwilligungstext, Bestätigungsmail und Anbieter den rechtlichen "
+"Anforderungen genügen, beurteilt das Plugin nicht."
+msgstr ""
+"Modulul nu evaluează dacă textul consimțământului, e-mailul de confirmare "
+"sau furnizorul respectă cerințele legale."
+
+#: includes/Admin/AdminDashboard.php:451
+msgid "Letzte 50 Anmeldungen"
+msgstr "Ultimele 50 de înscrieri"
+
+#: includes/Admin/AdminDashboard.php:455
+msgid "CSV-Export (bis 5.000 Zeilen)"
+msgstr "Export CSV (până la 5.000 de rânduri)"
+
+#: includes/Admin/AdminDashboard.php:461
+msgid "ID"
+msgstr "ID"
+
+#: includes/Admin/AdminDashboard.php:462
+msgid "E-Mail"
+msgstr "E-mail"
+
+#: includes/Admin/AdminDashboard.php:463
+msgid "IP-Hash"
+msgstr "Hash IP"
+
+#: includes/Admin/AdminDashboard.php:464
+msgid "Hash des Einwilligungstexts"
+msgstr "Hash text consimțământ"
+
+#: includes/Admin/AdminDashboard.php:465
+msgid "Status"
+msgstr "Stare"
+
+#: includes/Admin/AdminDashboard.php:467
+msgid "Angemeldet"
+msgstr "Înscris"
+
+#: includes/Admin/AdminDashboard.php:468
+msgid "Bestätigt"
+msgstr "Confirmat"
+
+#: includes/Admin/AdminDashboard.php:473
+msgid "Keine Anmeldungen vorhanden."
+msgstr "Nu există înscrieri."
+
+#: includes/Admin/AdminDashboard.php:506
+msgid "Allgemein und Absender"
+msgstr "General și expeditor"
+
+#: includes/Admin/AdminDashboard.php:516
+msgid "Absendername"
+msgstr "Numele expeditorului"
+
+#: includes/Admin/AdminDashboard.php:520
+msgid "Absenderadresse"
+msgstr "Adresa expeditorului"
+
+#: includes/Admin/AdminDashboard.php:524
+msgid "Betreff der Bestätigungsmail"
+msgstr "Subiectul e-mailului de confirmare"
+
+#: includes/Admin/AdminDashboard.php:528
+msgid ""
+"Bestätigungsfenster in Stunden (1–168); danach werden unbestätigte "
+"Anmeldungen gelöscht"
+msgstr ""
+"Fereastră de confirmare în ore (1–168); ulterior înscrierile neconfirmate "
+"sunt șterse"
+
+#: includes/Admin/AdminDashboard.php:532
+msgid "Impressum-URL (Fuß der Bestätigungsmail)"
+msgstr "URL mențiuni legale (subsolul e-mailului de confirmare)"
+
+#: includes/Admin/AdminDashboard.php:536
+msgid "Datenschutzerklärung-URL (Formular und Mail)"
+msgstr "URL politică de confidențialitate (formular și e-mail)"
+
+#: includes/Admin/AdminDashboard.php:542
+msgid ""
+"Proof-of-Work im Formular verlangen (der Browser rechnet vor dem Absenden; "
+"ohne HTTPS nicht möglich)"
+msgstr ""
+"Solicită proof-of-work în formular (browserul calculează înainte de "
+"trimitere; necesită HTTPS)"
+
+#: includes/Admin/AdminDashboard.php:548
+msgid ""
+"List-Unsubscribe- und List-Unsubscribe-Post-Header in die Bestätigungsmail "
+"setzen"
+msgstr ""
+"Adaugă antetele List-Unsubscribe și List-Unsubscribe-Post în e-mailul de "
+"confirmare"
+
+#: includes/Admin/AdminDashboard.php:554
+msgid "Zugangsdaten der Anbieter"
+msgstr "Date de autentificare furnizori"
+
+#: includes/Admin/AdminDashboard.php:556
+msgid "Brevo API-Schlüssel"
+msgstr "Cheie API Brevo"
+
+#: includes/Admin/AdminDashboard.php:560
+msgid "Rapidmail API-Benutzer"
+msgstr "Utilizator API Rapidmail"
+
+#: includes/Admin/AdminDashboard.php:564
+msgid "Rapidmail API-Passwort"
+msgstr "Parolă API Rapidmail"
+
+#: includes/Admin/AdminDashboard.php:568
+msgid "CleverReach REST-Token"
+msgstr "Token REST CleverReach"
+
+#: includes/Admin/AdminDashboard.php:572
+msgid "Kit API-Schlüssel (v4)"
+msgstr "Cheie API Kit (v4)"
+
+#: includes/Admin/AdminDashboard.php:576
+msgid "Mailchimp API-Schlüssel (mit Rechenzentrum, z. B. …-us6)"
+msgstr "Cheie API Mailchimp (cu centru de date, de ex. …-us6)"
+
+#: includes/Admin/AdminDashboard.php:580
+msgid ""
+"Standard-Liste bzw. Gruppen-ID (Rapidmail, CleverReach und Mailchimp "
+"brauchen eine echte ID)"
+msgstr ""
+"ID implicit listă sau grup (Rapidmail, CleverReach și Mailchimp necesită un "
+"ID real)"
+
+#: includes/Admin/AdminDashboard.php:586
+msgid "Webhook für Abmeldungen beim Anbieter"
+msgstr "Webhook pentru dezabonări la furnizor"
+
+#: includes/Admin/AdminDashboard.php:587
+msgid ""
+"Tragen Sie diese Adresse beim Anbieter ein. Ein Ereignis unsubscribe, spam, "
+"contact_deleted, unsub, complaint oder deleted (oder keines) mit einer E-"
+"Mail-Adresse setzt den lokalen Eintrag auf abgemeldet. Die Adresse enthält "
+"den Schlüssel: nicht weitergeben."
+msgstr ""
+"Introduceți această adresă la furnizor. Un eveniment unsubscribe, spam, "
+"contact_deleted, unsub, complaint sau deleted (ori niciunul) însoțit de o "
+"adresă de e-mail marchează înregistrarea locală ca dezabonată. Adresa "
+"conține cheia secretă: nu o divulgați."
+
+#: includes/Admin/AdminDashboard.php:589
+msgid "Webhook-URL"
+msgstr "URL webhook"
+
+#: includes/Admin/AdminDashboard.php:595
+msgid "Deinstallation und Datenaufbewahrung"
+msgstr "Dezinstalare și păstrarea datelor"
+
+#: includes/Admin/AdminDashboard.php:596
+msgid ""
+"Standardmäßig bleiben Einstellungen, Abonnenten und Einwilligungsprotokolle "
+"beim Löschen des Plugins erhalten."
+msgstr ""
+"Implicit, setările, abonații și jurnalele de consimțământ sunt păstrate la "
+"ștergerea modulului."
+
+#: includes/Admin/AdminDashboard.php:600
+msgid ""
+"Alle Einstellungen, Abonnenten und Einwilligungsprotokolle beim "
+"Deinstallieren unwiderruflich löschen"
+msgstr ""
+"Șterge ireversibil toate setările, abonații și jurnalele de consimțământ la "
+"dezinstalare"
+
+#: includes/Admin/AdminDashboard.php:605
+msgid "Einstellungen speichern"
+msgstr "Salvează setările"
+
+#: includes/Admin/AdminDashboard.php:610
+msgid "Formular einbinden"
+msgstr "Integrare formular"
+
+#: includes/Admin/AdminDashboard.php:611
+msgid ""
+"Der Shortcode gibt das Anmeldeformular mit Einwilligungs-Checkbox und Link "
+"zur Datenschutzerklärung aus. Einen Gutenberg-Block gibt es nicht."
+msgstr ""
+"Shortcode-ul afișează formularul de abonare cu casetă de consimțământ și "
+"link către politica de confidențialitate. Nu există bloc Gutenberg."
+
+#: includes/Admin/AdminDashboard.php:616
+msgid "Attribut"
+msgstr "Atribut"
+
+#: includes/Admin/AdminDashboard.php:617
+msgid "Standardwert"
+msgstr "Valoare implicită"
+
+#: includes/Admin/AdminDashboard.php:618
+msgid "Bedeutung"
+msgstr "Semnificație"
+
+#: includes/Admin/AdminDashboard.php:622
+msgid "Überschrift des Formulars"
+msgstr "Titlul formularului"
+
+#: includes/Admin/AdminDashboard.php:623
+msgid "Text unter der Überschrift; leer bleibt er weg"
+msgstr "Text sub titlu; dacă este gol nu se afișează"
+
+#: includes/Admin/AdminDashboard.php:624
+msgid ""
+"Liste beim Anbieter; ohne Angabe (oder mit dem Wert default) gilt die "
+"Standard-Liste aus den Einstellungen"
+msgstr ""
+"Lista la furnizor; fără valoare (sau cu default) se folosește lista "
+"implicită din setări"
+
+#: includes/Admin/AdminDashboard.php:625
+msgid ""
+"art_6_1_a oder art_6_1_b; wird mit der Anmeldung gespeichert, das Plugin "
+"prüft sie nicht"
+msgstr ""
+"art_6_1_a sau art_6_1_b; salvat împreună cu înscrierea fără verificare "
+"juridică"
+
+#: includes/Admin/AdminDashboard.php:626
+msgid "Beschriftung des Absende-Buttons"
+msgstr "Eticheta butonului de trimitere"
+
+#: includes/Admin/SettingsManager.php:41 includes/Core/Activator.php:54
+#: includes/Mailer/DoiMailer.php:48
+msgid "Bitte bestätigen Sie Ihre Anmeldung"
+msgstr "Vă rugăm să confirmați abonarea"
+
+#: includes/Database/DoiRepository.php:147
+msgid "Ungültiger oder nicht gefundener Bestätigungstoken."
+msgstr "Token de confirmare nevalid sau inexistent."
+
+#: includes/Database/DoiRepository.php:158
+msgid "Ihre E-Mail-Adresse wurde bereits erfolgreich bestätigt."
+msgstr "Adresa dvs. de e-mail a fost deja confirmată."
+
+#: includes/Database/DoiRepository.php:168
+msgid "Dieser Bestätigungslink ist nicht mehr gültig."
+msgstr "Acest link de confirmare nu mai este valabil."
+
+#. translators: %d: hours a confirmation link stays valid
+#: includes/Database/DoiRepository.php:186
+#, php-format
+msgid ""
+"Der Bestätigungslink ist abgelaufen (gültig %d Stunden). Bitte melden Sie "
+"sich erneut an."
+msgstr ""
+"Linkul de confirmare a expirat (valabil %d ore). Vă rugăm să vă înscrieți "
+"din nou."
+
+#: includes/Database/DoiRepository.php:229
+msgid "Vielen Dank! Ihre E-Mail-Adresse wurde erfolgreich bestätigt."
+msgstr "Vă mulțumim! Adresa dvs. de e-mail a fost confirmată cu succes."
+
+#: includes/Domain/Enum/SubscriberStatus.php:18
+msgid "Aktiv abonniert"
+msgstr "Abonat activ"
+
+#: includes/Domain/Enum/SubscriberStatus.php:19
+msgid "Abgemeldet"
+msgstr "Dezabonat"
+
+#: includes/Domain/Enum/SubscriberStatus.php:20
+msgid "Bereinigt / Gelöscht"
+msgstr "Curățat / Șters"
+
+#: includes/Domain/Enum/SubscriberStatus.php:21
+msgid "Unbekannter Status"
+msgstr "Stare necunoscută"
+
+#: includes/Frontend/EcosystemIntegrations.php:52
+msgid "WM Newsletter Statistik"
+msgstr "Statistici Newsletter WM"
+
+#: includes/Frontend/EcosystemIntegrations.php:63
+msgid "Newsletter-Statistik"
+msgstr "Statistici newsletter"
+
+#: includes/Frontend/EcosystemIntegrations.php:70
+msgid "Kennzahl"
+msgstr "Indicator"
+
+#. translators: %s: Privacy policy URL
+#: includes/Frontend/FormRenderer.php:49
+#, php-format
+msgid ""
+"Ich willige in die Verarbeitung meiner E-Mail-Adresse zum Zweck des "
+"Newsletter-Versands ein. Der Widerruf ist gem. Art. 7 Abs. 3 DSGVO jederzeit "
+"möglich (<a href=\"%s\" target=\"_blank\" "
+"rel=\"noopener\">Datenschutzerklärung</a>)."
+msgstr ""
+"Sunt de acord cu prelucrarea adresei mele de e-mail în scopul trimiterii "
+"newsletterului. Retragerea consimțământului este posibilă oricând conform "
+"art. 7 alin. (3) GDPR (<a href=\"%s\" target=\"_blank\" "
+"rel=\"noopener\">Politica de confidențialitate</a>)."
+
+#: includes/Frontend/FormRenderer.php:87
+msgid "Wird übermittelt …"
+msgstr "Se trimite…"
+
+#: includes/Frontend/FormRenderer.php:88
+msgid "Sicherheitsprüfung läuft …"
+msgstr "Verificare de securitate în curs…"
+
+#: includes/Frontend/FormRenderer.php:89
+msgid "Bestätigungslink wurde gesendet. Bitte prüfen Sie Ihr Postfach."
+msgstr "Linkul de confirmare a fost trimis. Verificați căsuța de e-mail."
+
+#: includes/Frontend/FormRenderer.php:90
+msgid "Ein Fehler ist aufgetreten. Bitte versuchen Sie es erneut."
+msgstr "A apărut o eroare. Încercați din nou."
+
+#: includes/Frontend/FormRenderer.php:91
+#: includes/REST/SubscriptionController.php:196
+msgid "Bitte bestätigen Sie die Einwilligung."
+msgstr "Vă rugăm să confirmați consimțământul."
+
+#: includes/Frontend/FormRenderer.php:92
+msgid ""
+"Ihr Browser kann die Sicherheitsprüfung nicht ausführen (nur über HTTPS "
+"verfügbar)."
+msgstr ""
+"Browserul dvs. nu poate efectua verificarea de securitate (disponibilă doar "
+"prin HTTPS)."
+
+#: includes/Frontend/FormRenderer.php:106
+msgid "Newsletter abonnieren"
+msgstr "Abonare la newsletter"
+
+#: includes/Frontend/FormRenderer.php:112
+msgid "Anmelden"
+msgstr "Abonează-te"
+
+#: includes/Frontend/FormRenderer.php:140
+#: includes/Frontend/FormRenderer.php:141
+msgid "Nicht ausfüllen"
+msgstr "Nu completați"
+
+#: includes/Frontend/FormRenderer.php:146
+msgid "E-Mail-Adresse"
+msgstr "Adresă de e-mail"
+
+#: includes/Frontend/FormRenderer.php:187
+msgid "E-Mail-Adresse bestätigt"
+msgstr "Adresă de e-mail confirmată"
+
+#: includes/Frontend/FormRenderer.php:187
+msgid "Bestätigung nicht möglich"
+msgstr "Confirmarea nu este posibilă"
+
+#: includes/Frontend/FormRenderer.php:190
+msgid "Zur Startseite"
+msgstr "Înapoi la pagina principală"
+
+#. translators: %d: hours an unconfirmed address is kept
+#: includes/Mailer/DoiMailer.php:56
+#, php-format
+msgid ""
+"Falls Sie diese Anfrage nicht ausgelöst haben, können Sie diese E-Mail "
+"ignorieren. Ohne Bestätigung wird Ihre Adresse nach %d Stunden gelöscht."
+msgstr ""
+"Dacă nu ați inițiat această cerere, puteți ignora acest e-mail. Fără "
+"confirmare, adresa dvs. va fi ștearsă după %d ore."
+
+#: includes/Mailer/DoiMailer.php:64
+msgid "Bestätigung Ihrer E-Mail-Adresse"
+msgstr "Confirmarea adresei dvs. de e-mail"
+
+#: includes/Mailer/DoiMailer.php:65
+msgid ""
+"Sie haben sich mit dieser E-Mail-Adresse für unseren Newsletter angemeldet. "
+"Um Ihre Anmeldung abzuschließen und den Empfang zu aktivieren, klicken Sie "
+"bitte auf den folgenden Bestätigungslink:"
+msgstr ""
+"V-ați înscris la newsletterul nostru cu această adresă de e-mail. Pentru a "
+"finaliza înscrierea și a activa primirea, faceți clic pe următorul link de "
+"confirmare:"
+
+#: includes/Mailer/DoiMailer.php:68
+msgid "Anmeldung bestätigen"
+msgstr "Confirmă abonarea"
+
+#: includes/Mailer/DoiMailer.php:75
+msgid "Impressum"
+msgstr "Mențiuni legale"
+
+#: includes/Mailer/DoiMailer.php:76
+msgid "Datenschutzerklärung"
+msgstr "Politica de confidențialitate"
+
+#: includes/Queue/SyncQueue.php:74
+msgid "Alle fünf Minuten"
+msgstr "La fiecare cinci minute"
+
+#: includes/REST/SubscriptionController.php:71
+#: includes/REST/SubscriptionController.php:94
+#: includes/REST/SubscriptionController.php:154
+#: includes/REST/SubscriptionController.php:282
+msgid "Zu viele Anfragen. Bitte warten Sie einen Moment."
+msgstr "Prea multe cereri. Așteptați un moment."
+
+#: includes/REST/SubscriptionController.php:166
+msgid "Vielen Dank für Ihre Anmeldung! Bitte prüfen Sie Ihr Postfach."
+msgstr "Vă mulțumim pentru înscriere! Verificați căsuța de e-mail."
+
+#: includes/REST/SubscriptionController.php:179
+msgid "Sicherheitsüberprüfung fehlgeschlagen (Proof-of-Work ungültig)."
+msgstr "Verificarea de securitate a eșuat (proof-of-work nevalid)."
+
+#: includes/REST/SubscriptionController.php:189
+msgid "Bitte geben Sie eine gültige E-Mail-Adresse ein."
+msgstr "Introduceți o adresă de e-mail validă."
+
+#: includes/REST/SubscriptionController.php:204
+msgid "Das Formular ist ungültig. Bitte laden Sie die Seite neu."
+msgstr "Formularul nu este valid. Reîncărcați pagina."
+
+#: includes/REST/SubscriptionController.php:235
+msgid ""
+"Die Anmeldung konnte nicht gespeichert werden. Bitte versuchen Sie es später."
+msgstr "Înscrierea nu a putut fi salvată. Încercați mai târziu."
+
+#: includes/REST/SubscriptionController.php:247
+msgid ""
+"Die Bestätigungs-E-Mail konnte nicht versendet werden. Bitte versuchen Sie "
+"es später."
+msgstr "E-mailul de confirmare nu a putut fi trimis. Încercați mai târziu."
+
+#: includes/REST/SubscriptionController.php:253
+msgid ""
+"Fast geschafft! Wir haben Ihnen einen Bestätigungslink per E-Mail gesendet."
+msgstr "Aproape gata! V-am trimis prin e-mail un link de confirmare."
+
+#: includes/REST/SubscriptionController.php:290
+msgid "Bitte geben Sie eine gültige E-Mail-Adresse an."
+msgstr "Indicați o adresă de e-mail validă."
+
+#: includes/REST/SubscriptionController.php:298
+msgid ""
+"Der Abmeldelink ist ungültig oder abgelaufen. Bitte nutzen Sie den Link aus "
+"Ihrer E-Mail."
+msgstr ""
+"Linkul de dezabonare este nevalid sau expirat. Folosiți linkul din e-mailul "
+"primit."
+
+#: includes/REST/SubscriptionController.php:306
+msgid "Sie wurden erfolgreich vom Newsletter abgemeldet."
+msgstr "V-ați dezabonat cu succes de la newsletter."
+
+#. translators: %s: incident reference the visitor can quote to support
+#: includes/Security/ErrorSanitizer.php:28
+#, php-format
+msgid "Ein Systemfehler ist aufgetreten. Referenznummer: %s"
+msgstr "A apărut o eroare de sistem. Număr de referință: %s"
+
+#: includes/Security/RequestShield.php:54
+msgid "Die Anfrage wurde abgelehnt."
+msgstr "Cererea a fost respinsă."
+
+#~ msgid "https://www.arnoldwender.com"
+#~ msgstr "https://www.arnoldwender.com"

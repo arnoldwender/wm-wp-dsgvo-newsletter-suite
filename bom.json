@@ -1,0 +1,35 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.6",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2026-11-18T21:49:50Z",
+    "component": {
+      "type": "application",
+      "name": "wm-dsgvo-newsletter-suite",
+      "version": "1.2.2",
+      "description": "Double opt-in newsletter sign-up form with per-sign-up consent records and server-side transfer to Brevo, Rapidmail, CleverReach, Kit or Mailchimp.",
+      "supplier": {
+        "name": "Arnold Wender",
+        "url": [
+          "https://arnoldwender.com"
+        ]
+      },
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-or-later"
+          }
+        }
+      ],
+      "purl": "pkg:wordpress/wm-dsgvo-newsletter-suite@1.2.2",
+      "hashes": [
+        {
+          "alg": "SHA-256",
+          "content": "cd168f602c90f70a94b7e1334fd0fa01459cb7af7cc55f63301dd25c3df08ab8"
+        }
+      ]
+    }
+  },
+  "components": []
+}

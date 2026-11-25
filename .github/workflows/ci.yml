@@ -1,0 +1,76 @@
+name: CI Test Suite
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        # The plugin header requires PHP 8.2; 8.1 was tested until 2026-09-15.
+        php-version: ['8.2', '8.3']
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Setup PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: ${{ matrix.php-version }}
+          extensions: dom, mbstring, json, openssl, libxml, simplexml
+
+      - name: Run Standalone Test Suites
+        run: |
+          # Explicit entry points, not a glob: tests/test-newsletter-suite.php is an integration
+          # test that needs WordPress (wp eval-file) and fatals on the runner.
+          # Exit 0 alone is not green: a PHP file that leaves PHP mode early prints its source and
+          # exits 0 without running an assertion. The standalone suite must print its results line.
+          set +e
+          out=$(php tests/test-suite.php 2>&1); code=$?
+          set -e
+          printf '%s\n' "$out"
+          [ "$code" -eq 0 ]
+          # Here-string, not printf | grep -q: under the runner's pipefail, grep -q can end the pipe early and
+          # printf's SIGPIPE fails the step although the line is there.
+          grep -Eq '^  TEST SUITE RESULTS: [1-9][0-9]* PASSED \| 0 FAILED$' <<<"$out"
+
+      # `wp i18n make-pot` IS the definition of a fresh catalog in the step below, so wp-cli is a
+      # hard requirement there rather than something it shrugs off. Into $HOME/bin, not the
+      # workspace: an executable in the repo root would land in the copy the mutation runner makes.
+      # No workflow input reaches these commands; the URL is a literal.
+      - name: Install WP-CLI
+        if: matrix.php-version == '8.3'
+        run: |
+          mkdir -p "$HOME/bin"
+          curl -sSL https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar -o "$HOME/bin/wp"
+          chmod +x "$HOME/bin/wp"
+          echo "$HOME/bin" >> "$GITHUB_PATH"
+
+      # 111 of the 140 translatable strings had no entry on 2026-09-20 — including the consent
+      # sentence and the confirmation mail, the texts a sign-up form actually shows a person.
+      - name: Translation catalog freshness
+        if: matrix.php-version == '8.3'
+        run: php tests/test-pot-freshness.php
+
+      - name: Mutation Check
+        # Each entry of tests/mutations.php undone once; the suite must turn red every time (control run first).
+        run: bash tests/run-mutations.sh
+
+      # Static greps for secrets, CDN enqueues, shell calls and unprepared queries; it checks no legal compliance.
+      - name: Security Audit (static checks)
+        run: python3 .github/scripts/security-audit.py
+
+      - name: SBOM File Check (warning only)
+        run: |
+          # El mandato SBOM del Cyber Resilience Act aplica desde el 2027-12-11.
+          # Hasta que la flota tenga SBOMs esto avisa, no rompe el build.
+          if [ ! -f "bom.json" ]; then
+            echo "::warning::bom.json (SBOM) ausente — pendiente para el CRA (2027-12-11)."
+          else
+            echo "bom.json presente."
+          fi

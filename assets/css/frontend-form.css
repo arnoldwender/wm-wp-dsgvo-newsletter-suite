@@ -1,0 +1,267 @@
+/* ==========================================================================
+   WM DSGVO Newsletter Suite — subscription form and confirmation page.
+   Tokens are scoped to the plugin's boxes so they never leak into the theme; every value below the
+   token block reads a custom property (2026-09-15, until then raw hex, px and shadows).
+   ========================================================================== */
+
+/* --- Tokens -------------------------------------------------------------- */
+:where(.wm-newsletter-box, .wm-nl-confirm) {
+    --wm-nl-color-surface: #0f172a;
+    --wm-nl-color-surface-sunken: #090d16;
+    --wm-nl-color-border: #1e293b;
+    --wm-nl-color-border-input: #334155;
+    --wm-nl-color-text: #cbd5e1;
+    --wm-nl-color-text-muted: #94a3b8;
+    --wm-nl-color-heading: #ffffff;
+    --wm-nl-color-accent: #00f2fe;
+    --wm-nl-color-accent-end: #38bdf8;
+    --wm-nl-color-accent-ink: #090d16;
+    --wm-nl-color-link: #38bdf8;
+    --wm-nl-color-success-text: #34d399;
+    --wm-nl-color-success-border: #10b981;
+    --wm-nl-color-success-bg: rgba(16, 185, 129, 0.15);
+    --wm-nl-color-error-text: #f87171;
+    --wm-nl-color-error-border: #ef4444;
+    --wm-nl-color-error-bg: rgba(239, 68, 68, 0.15);
+    --wm-nl-color-accent-glow: rgba(0, 242, 254, 0.4);
+
+    --wm-nl-space-1: 4px;
+    --wm-nl-space-2: 8px;
+    --wm-nl-space-3: 12px;
+    --wm-nl-space-4: 16px;
+    --wm-nl-space-5: 20px;
+    --wm-nl-space-6: 24px;
+    --wm-nl-space-7: 28px;
+    --wm-nl-space-12: 48px;
+
+    --wm-nl-text-sm: 0.875rem;
+    --wm-nl-text-base: 1rem;
+    --wm-nl-text-lg: 1.35rem;
+    --wm-nl-text-xl: 1.8rem;
+    --wm-nl-weight-bold: 800;
+    --wm-nl-leading: 1.5;
+
+    --wm-nl-radius-sm: 6px;
+    --wm-nl-radius-md: 8px;
+    --wm-nl-radius-lg: 14px;
+    --wm-nl-border-width: 1px;
+    --wm-nl-focus-ring-width: 2px;
+    --wm-nl-shadow-box: 0 10px 25px -5px rgba(0, 0, 0, 0.4);
+    --wm-nl-shadow-hover: 0 0 15px var(--wm-nl-color-accent-glow);
+    --wm-nl-transition: 0.2s ease;
+
+    --wm-nl-touch-target: 44px;
+    --wm-nl-checkbox-size: 18px;
+    --wm-nl-field-min: 220px;
+    --wm-nl-box-max: 600px;
+    --wm-nl-confirm-max: 680px;
+}
+
+/* --- Box ----------------------------------------------------------------- */
+.wm-newsletter-box {
+    background: var(--wm-nl-color-surface);
+    border: var(--wm-nl-border-width) solid var(--wm-nl-color-border);
+    border-radius: var(--wm-nl-radius-lg);
+    padding: var(--wm-nl-space-7);
+    color: var(--wm-nl-color-text);
+    box-shadow: var(--wm-nl-shadow-box);
+    box-sizing: border-box;
+    max-width: var(--wm-nl-box-max);
+    margin: 0 auto;
+}
+
+.wm-nl-title {
+    color: var(--wm-nl-color-heading);
+    font-size: var(--wm-nl-text-lg);
+    font-weight: var(--wm-nl-weight-bold);
+    margin: 0 0 var(--wm-nl-space-2) 0;
+}
+
+.wm-nl-desc {
+    color: var(--wm-nl-color-text-muted);
+    font-size: var(--wm-nl-text-base);
+    line-height: var(--wm-nl-leading);
+    margin: 0 0 var(--wm-nl-space-5) 0;
+}
+
+/* Honeypot: off-screen, not display:none (some bots skip hidden fields). */
+.wm-nl-hp {
+    position: absolute;
+    left: -9999px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+/* --- Fields -------------------------------------------------------------- */
+.wm-nl-fields {
+    display: flex;
+    gap: var(--wm-nl-space-3);
+    flex-wrap: wrap;
+    align-items: flex-end;
+    margin-bottom: var(--wm-nl-space-4);
+}
+
+.wm-nl-field-wrap {
+    flex: 1;
+    min-width: min(100%, var(--wm-nl-field-min));
+}
+
+.wm-nl-label {
+    display: block;
+    font-size: var(--wm-nl-text-sm);
+    color: var(--wm-nl-color-text);
+    margin-bottom: var(--wm-nl-space-1);
+}
+
+.wm-nl-input {
+    width: 100%;
+    min-height: var(--wm-nl-touch-target);
+    background: var(--wm-nl-color-surface-sunken);
+    border: var(--wm-nl-border-width) solid var(--wm-nl-color-border-input);
+    color: var(--wm-nl-color-heading);
+    padding: var(--wm-nl-space-2) var(--wm-nl-space-3);
+    border-radius: var(--wm-nl-radius-md);
+    font-size: var(--wm-nl-text-base);
+    box-sizing: border-box;
+    transition: border-color var(--wm-nl-transition), box-shadow var(--wm-nl-transition);
+}
+
+/* Double-ring focus. The ring is the box-shadow; the outline stays declared but transparent so
+   forced-colors mode (which drops box-shadow) still paints it. */
+.wm-nl-input:focus,
+.wm-nl-checkbox:focus-visible,
+.wm-nl-btn:focus-visible {
+    outline: var(--wm-nl-focus-ring-width) solid transparent;
+    outline-offset: var(--wm-nl-focus-ring-width);
+    border-color: var(--wm-nl-color-accent);
+    box-shadow: 0 0 0 var(--wm-nl-focus-ring-width) var(--wm-nl-color-surface-sunken), 0 0 0 calc(var(--wm-nl-focus-ring-width) * 2) var(--wm-nl-color-accent);
+}
+
+.wm-nl-btn {
+    min-height: var(--wm-nl-touch-target);
+    padding: var(--wm-nl-space-2) var(--wm-nl-space-6);
+    background: linear-gradient(135deg, var(--wm-nl-color-accent) 0%, var(--wm-nl-color-accent-end) 100%);
+    color: var(--wm-nl-color-accent-ink);
+    font-weight: var(--wm-nl-weight-bold);
+    font-size: var(--wm-nl-text-base);
+    border: none;
+    border-radius: var(--wm-nl-radius-md);
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: box-shadow var(--wm-nl-transition), transform var(--wm-nl-transition);
+    white-space: nowrap;
+    touch-action: manipulation;
+    text-decoration: none;
+}
+
+.wm-nl-btn:hover {
+    box-shadow: var(--wm-nl-shadow-hover);
+    transform: translateY(-1px);
+}
+
+.wm-nl-btn:disabled {
+    cursor: progress;
+    opacity: 0.7;
+    transform: none;
+}
+
+/* --- Consent ------------------------------------------------------------- */
+.wm-nl-consent-wrap {
+    font-size: var(--wm-nl-text-sm);
+    color: var(--wm-nl-color-text-muted);
+    line-height: var(--wm-nl-leading);
+}
+
+.wm-nl-checkbox-label {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--wm-nl-space-2);
+    cursor: pointer;
+}
+
+.wm-nl-checkbox {
+    margin-top: var(--wm-nl-space-1);
+    accent-color: var(--wm-nl-color-accent);
+    min-width: var(--wm-nl-checkbox-size);
+    min-height: var(--wm-nl-checkbox-size);
+}
+
+.wm-nl-consent-wrap a,
+.wm-nl-confirm a:not(.wm-nl-btn) {
+    color: var(--wm-nl-color-link);
+    text-decoration: underline;
+}
+
+/* --- Feedback ------------------------------------------------------------ */
+.wm-nl-feedback {
+    margin: var(--wm-nl-space-4) 0 0;
+    padding: var(--wm-nl-space-2) var(--wm-nl-space-4);
+    border-radius: var(--wm-nl-radius-sm);
+    font-size: var(--wm-nl-text-sm);
+}
+
+.wm-nl-feedback.success {
+    background: var(--wm-nl-color-success-bg);
+    color: var(--wm-nl-color-success-text);
+    border: var(--wm-nl-border-width) solid var(--wm-nl-color-success-border);
+}
+
+.wm-nl-feedback.error {
+    background: var(--wm-nl-color-error-bg);
+    color: var(--wm-nl-color-error-text);
+    border: var(--wm-nl-border-width) solid var(--wm-nl-color-error-border);
+}
+
+/* --- Confirmation page --------------------------------------------------- */
+.wm-nl-confirm {
+    display: block;
+    max-width: var(--wm-nl-confirm-max);
+    margin: var(--wm-nl-space-12) auto;
+    padding: 0 var(--wm-nl-space-6);
+    box-sizing: border-box;
+}
+
+.wm-nl-confirm-box {
+    max-width: none;
+    padding: var(--wm-nl-space-12) var(--wm-nl-space-7);
+    text-align: center;
+}
+
+.wm-nl-confirm-box .wm-nl-title {
+    font-size: var(--wm-nl-text-xl);
+    margin-bottom: var(--wm-nl-space-4);
+}
+
+.wm-nl-confirm-message {
+    font-size: var(--wm-nl-text-base);
+    line-height: var(--wm-nl-leading);
+    margin: 0 0 var(--wm-nl-space-6);
+    color: var(--wm-nl-color-text-muted);
+}
+
+.wm-nl-confirm-box.is-error .wm-nl-confirm-message {
+    color: var(--wm-nl-color-error-text);
+}
+
+@media (max-width: 500px) {
+    .wm-nl-fields {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .wm-nl-btn {
+        width: 100%;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .wm-nl-input,
+    .wm-nl-btn {
+        transition: none;
+    }
+    .wm-nl-btn:hover {
+        transform: none;
+    }
+}

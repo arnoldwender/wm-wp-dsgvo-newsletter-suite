@@ -1,0 +1,788 @@
+# Translation of wm-dsgvo-newsletter-suite in lt_LT
+# Copyright (C) 2026 Arnold Wender
+# This file is distributed under the GPLv2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: wm-dsgvo-newsletter-suite 1.2.1\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/wm-dsgvo-"
+"newsletter-suite\n"
+"POT-Creation-Date: 2026-11-21T13:12:17+00:00\n"
+"PO-Revision-Date: 2026-11-21 14:12+0100\n"
+"Last-Translator: WM Suite <https://github.com/arnoldwender/wm-wp-dsgvo-"
+"newsletter-suite/issues>\n"
+"Language-Team: WM Suite <https://github.com/arnoldwender/wm-wp-dsgvo-"
+"newsletter-suite/issues>\n"
+"Language: lt_LT\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && (n%100<11 || n%100>19) ? 0 : "
+"n%10>=2 && n%10<=9 && (n%100<11 || n%100>19) ? 1 : 2);\n"
+"X-Generator: WM Suite i18n Compiler 2026\n"
+"X-Domain: wm-dsgvo-newsletter-suite\n"
+
+#. Plugin Name of the plugin
+#: wm-dsgvo-newsletter-suite.php includes/Admin/AdminDashboard.php:74
+#: includes/Admin/AdminDashboard.php:311
+msgid "WM DSGVO Newsletter Suite"
+msgstr "WM BDAR naujienlaiškių rinkinys"
+
+#. Plugin URI of the plugin
+#: wm-dsgvo-newsletter-suite.php
+msgid "https://arnoldwender.com/wordpress-plugins/wm-dsgvo-newsletter-suite/"
+msgstr "https://arnoldwender.com/wordpress-plugins/wm-dsgvo-newsletter-suite/"
+
+#. Description of the plugin
+#: wm-dsgvo-newsletter-suite.php
+msgid ""
+"Newsletter-Anmeldung mit Double-Opt-In: Formular mit Einwilligungs-Checkbox "
+"und Proof-of-Work, Bestätigungsmail, Protokoll je Anmeldung "
+"(Einwilligungstext, Hash, geschlüsselter IP-Hash) und serverseitige Übergabe "
+"bestätigter Adressen an Brevo, Rapidmail, CleverReach, Kit oder Mailchimp. "
+"Keine rechtliche Bewertung."
+msgstr ""
+"Naujienlaiškio prenumerata su dvigubu patvirtinimu (double opt-in): forma su "
+"sutikimo langeliu ir proof-of-work, patvirtinimo el. laiškas, įrašas "
+"kiekvienai prenumeratai (sutikimo tekstas, maiša, raktinė IP maiša) ir "
+"patvirtintų adresų perdavimas iš serverio į Brevo, Rapidmail, CleverReach, "
+"Kit arba Mailchimp. Be teisinio vertinimo."
+
+#. Author of the plugin
+#: wm-dsgvo-newsletter-suite.php
+msgid "Arnold Wender"
+msgstr "Arnold Wender"
+
+#. Author URI of the plugin
+#: wm-dsgvo-newsletter-suite.php
+msgid "https://arnoldwender.com"
+msgstr "https://arnoldwender.com"
+
+#: includes/Admin/AdminDashboard.php:49
+msgid "Nur lokal (keine Übergabe an einen Anbieter)"
+msgstr "Tik vietoje (neperduodama teikėjui)"
+
+#: includes/Admin/AdminDashboard.php:93
+msgid "Anbieter nicht vollständig eingerichtet"
+msgstr "Teikėjas nesukonfigūruotas iki galo"
+
+#: includes/Admin/AdminDashboard.php:95
+msgid "Übergaben an den Anbieter fehlgeschlagen"
+msgstr "Perdavimas teikėjui nepavyko"
+
+#: includes/Admin/AdminDashboard.php:97
+msgid "Double-Opt-In aktiv"
+msgstr "Dvigubas patvirtinimas aktyvus"
+
+#: includes/Admin/AdminDashboard.php:108
+msgid "Abonniert"
+msgstr "Prenumeruoja"
+
+#: includes/Admin/AdminDashboard.php:112
+msgid "Unbestätigt"
+msgstr "Nepatvirtinta"
+
+#: includes/Admin/AdminDashboard.php:116
+msgid "Übergabe fehlgeschlagen"
+msgstr "Perdavimas nepavyko"
+
+#: includes/Admin/AdminDashboard.php:122
+msgid "Newsletter Suite öffnen"
+msgstr "Atidaryti Newsletter Suite"
+
+#: includes/Admin/AdminDashboard.php:141
+msgid "WM DSGVO Newsletter"
+msgstr "WM BDAR naujienlaiškis"
+
+#: includes/Admin/AdminDashboard.php:142
+msgid "DSGVO Newsletter"
+msgstr "BDAR naujienlaiškis"
+
+#: includes/Admin/AdminDashboard.php:177 includes/Admin/AdminDashboard.php:211
+#: includes/Admin/AdminDashboard.php:229
+msgid "Keine Berechtigung."
+msgstr "Nepakanka teisių."
+
+#: includes/Admin/AdminDashboard.php:267
+msgid "Keine bestätigte Anmeldung wartete auf Übergabe."
+msgstr "Jokia patvirtinta prenumerata nelaukė perdavimo."
+
+#. translators: %d: number of contacts an external provider accepted
+#: includes/Admin/AdminDashboard.php:272
+#, php-format
+msgid "%d Kontakte an den Anbieter übergeben."
+msgstr "%d kontaktų perduota teikėjui."
+
+#. translators: %d: number of confirmed addresses kept in the local table
+#: includes/Admin/AdminDashboard.php:276
+#, php-format
+msgid ""
+"%d bestätigte Adressen nur in der lokalen Tabelle geführt (Einstellung „Nur "
+"lokal“, nichts verlässt die Website)."
+msgstr ""
+"%d patvirtintų adresų saugoma tik vietinėje lentelėje (nuostata „Tik "
+"vietoje“, niekas neišeina iš svetainės)."
+
+#. translators: %d: number of failed pushes
+#: includes/Admin/AdminDashboard.php:280
+#, php-format
+msgid ""
+"%d Übergaben fehlgeschlagen; die Antwort des Anbieters steht im PHP-"
+"Fehlerprotokoll."
+msgstr "%d perdavimų nepavyko; teikėjo atsakymas įrašytas PHP klaidų žurnale."
+
+#: includes/Admin/AdminDashboard.php:293
+msgid "Übersicht"
+msgstr "Apžvalga"
+
+#: includes/Admin/AdminDashboard.php:294
+msgid "Anmeldungen"
+msgstr "Prenumeratos"
+
+#: includes/Admin/AdminDashboard.php:295
+msgid "Einstellungen"
+msgstr "Nuostatos"
+
+#: includes/Admin/AdminDashboard.php:296
+msgid "Shortcode"
+msgstr "Trumpasis kodas"
+
+#: includes/Admin/AdminDashboard.php:312
+msgid ""
+"Newsletter-Anmeldung mit Double-Opt-In: Formular, Bestätigungsmail, "
+"Protokoll je Anmeldung und Übergabe bestätigter Adressen an den "
+"eingestellten Anbieter. Es ersetzt keine rechtliche Prüfung von "
+"Einwilligungstext und Versand."
+msgstr ""
+"Naujienlaiškio prenumerata su dvigubu patvirtinimu: forma, patvirtinimo "
+"laiškas, įrašas kiekvienai prenumeratai ir patvirtintų adresų perdavimas "
+"pasirinktam teikėjui. Nepakeičia teisinio sutikimo teksto ir siuntimo "
+"įvertinimo."
+
+#: includes/Admin/AdminDashboard.php:315
+msgid "Part of the WM Suite plugin family"
+msgstr "„WM Suite“ įskiepių šeimos dalis"
+
+#: includes/Admin/AdminDashboard.php:317
+msgid "WM Suite"
+msgstr "WM Suite"
+
+#: includes/Admin/AdminDashboard.php:318
+msgid "Hub"
+msgstr "Hub"
+
+#: includes/Admin/AdminDashboard.php:318
+msgid "Standalone"
+msgstr "Savarankiškas"
+
+#: includes/Admin/AdminDashboard.php:325
+msgid "Übergabe jetzt ausführen"
+msgstr "Vykdyti perdavimą dabar"
+
+#: includes/Admin/AdminDashboard.php:330
+msgid "Bereiche"
+msgstr "Skiltys"
+
+#: includes/Admin/AdminDashboard.php:338
+msgid "Einstellungen gespeichert."
+msgstr "Nuostatos išsaugotos."
+
+#: includes/Admin/AdminDashboard.php:351
+msgid "Abonniert (lokale Tabelle)"
+msgstr "Prenumeruoja (vietinė lentelė)"
+
+#: includes/Admin/AdminDashboard.php:355
+msgid "Unbestätigte Anmeldungen"
+msgstr "Nepatvirtintos prenumeratos"
+
+#: includes/Admin/AdminDashboard.php:360
+msgid "Nur lokal geführt (keine Übergabe an einen Anbieter)"
+msgstr "Saugoma tik vietoje (neperduodama teikėjui)"
+
+#: includes/Admin/AdminDashboard.php:363
+msgid "An den Anbieter übergeben"
+msgstr "Perduota teikėjui"
+
+#: includes/Admin/AdminDashboard.php:368
+msgid "Abgemeldet (lokale Tabelle)"
+msgstr "Atsisakė (vietinė lentelė)"
+
+#: includes/Admin/AdminDashboard.php:373
+msgid "Stand dieser Website"
+msgstr "Šios svetainės būsena"
+
+#: includes/Admin/AdminDashboard.php:374
+msgid "Beim Aufruf dieser Seite gelesen."
+msgstr "Nuskaityta atidarius šį puslapį."
+
+#: includes/Admin/AdminDashboard.php:378 includes/Admin/AdminDashboard.php:466
+#: includes/Admin/AdminDashboard.php:508
+msgid "Anbieter"
+msgstr "Teikėjas"
+
+#. translators: %s: comma-separated setting names
+#: includes/Admin/AdminDashboard.php:385
+#, php-format
+msgid "Es fehlt: %s"
+msgstr "Trūksta: %s"
+
+#: includes/Admin/AdminDashboard.php:392
+msgid "An einen externen Anbieter übergeben"
+msgstr "Perduota išoriniam teikėjui"
+
+#: includes/Admin/AdminDashboard.php:396
+msgid ""
+"Nur in der lokalen Tabelle geführt (Einstellung „Nur lokal“, nichts verlässt "
+"die Website)"
+msgstr ""
+"Saugoma tik vietinėje lentelėje (nuostata „Tik vietoje“, niekas neišeina iš "
+"svetainės)"
+
+#: includes/Admin/AdminDashboard.php:400
+msgid "Bestätigt, wartet auf den nächsten Übergabe-Lauf"
+msgstr "Patvirtinta, laukia kito perdavimo"
+
+#: includes/Admin/AdminDashboard.php:404
+msgid "Übergabe fehlgeschlagen (wird bei jedem Lauf erneut versucht)"
+msgstr "Perdavimas nepavyko (kartojama kiekvieno paleidimo metu)"
+
+#: includes/Admin/AdminDashboard.php:408
+msgid "Nicht übergeben, weil die Adresse lokal abgemeldet ist"
+msgstr "Neperduota, nes adresas vietoje atsisakė prenumeratos"
+
+#: includes/Admin/AdminDashboard.php:412
+msgid "Nächster automatischer Übergabe-Lauf (WP-Cron, alle fünf Minuten)"
+msgstr "Kitas automatinis perdavimas (WP-Cron, kas penkias minutes)"
+
+#: includes/Admin/AdminDashboard.php:413
+msgid "nicht geplant"
+msgstr "nesuplanuota"
+
+#: includes/Admin/AdminDashboard.php:416
+msgid "Bestätigungsfenster; danach werden unbestätigte Anmeldungen gelöscht"
+msgstr ""
+"Patvirtinimo langas; jam pasibaigus nepatvirtintos prenumeratos ištrinamos"
+
+#. translators: %d: hours
+#: includes/Admin/AdminDashboard.php:420
+#, php-format
+msgid "%d Stunden"
+msgstr "%d val."
+
+#: includes/Admin/AdminDashboard.php:425
+msgid "Proof-of-Work im Formular"
+msgstr "Proof-of-work formoje"
+
+#: includes/Admin/AdminDashboard.php:426 includes/Admin/AdminDashboard.php:430
+msgid "an"
+msgstr "įjungta"
+
+#: includes/Admin/AdminDashboard.php:426 includes/Admin/AdminDashboard.php:430
+msgid "aus"
+msgstr "išjungta"
+
+#: includes/Admin/AdminDashboard.php:429
+msgid "List-Unsubscribe-Header in der Bestätigungsmail"
+msgstr "List-Unsubscribe antraštė patvirtinimo laiške"
+
+#: includes/Admin/AdminDashboard.php:437
+msgid "Was das Plugin tut und was nicht"
+msgstr "Ką įskiepis daro ir ko nedaro"
+
+#: includes/Admin/AdminDashboard.php:439
+msgid ""
+"Jede Anmeldung wird mit dem angezeigten Einwilligungstext, dessen SHA-256-"
+"Hash, einem geschlüsselten Hash der IP-Adresse und dem Zeitpunkt "
+"gespeichert. Die Zeilen sind in der Datenbank änderbar; es gibt keine "
+"Signatur oder Kette."
+msgstr ""
+"Kiekviena prenumerata saugoma su parodytu sutikimo tekstu, jo SHA-256 maiša, "
+"raktine IP adreso maiša ir laiko žyma. Duomenų bazės eilutės yra keičiamos; "
+"nėra parašo ar grandinės."
+
+#: includes/Admin/AdminDashboard.php:440
+msgid ""
+"Erst nach Aufruf des Bestätigungslinks wird die Adresse als abonniert "
+"geführt und beim nächsten Lauf an den Anbieter übergeben. Unbestätigte "
+"Anmeldungen werden nach dem Bestätigungsfenster gelöscht."
+msgstr ""
+"Tik atidarius patvirtinimo nuorodą adresas pažymimas kaip prenumeruojantis "
+"ir kito paleidimo metu perduodamas teikėjui. Nepatvirtintos prenumeratos "
+"ištrinamos pasibaigus patvirtinimo langui."
+
+#: includes/Admin/AdminDashboard.php:441
+msgid ""
+"Eine Abmeldung über den Link aus der Bestätigungsmail oder über den Webhook "
+"ändert nur die lokale Tabelle. Beim Anbieter bereits übergebene Kontakte "
+"bleiben dort angemeldet."
+msgstr ""
+"Atsisakymas per nuorodą patvirtinimo laiške arba per webhooką pakeičia tik "
+"vietinę lentelę. Teikėjui jau perduoti kontaktai ten lieka prenumeratoriais."
+
+#: includes/Admin/AdminDashboard.php:442
+msgid "Newsletter versendet das Plugin nicht; das macht der Anbieter."
+msgstr "Įskiepis naujienlaiškių nesiunčia; tai atlieka teikėjas."
+
+#: includes/Admin/AdminDashboard.php:443
+msgid ""
+"Ob Einwilligungstext, Bestätigungsmail und Anbieter den rechtlichen "
+"Anforderungen genügen, beurteilt das Plugin nicht."
+msgstr ""
+"Įskiepis nevertina, ar sutikimo tekstas, patvirtinimo laiškas ir teikėjas "
+"atitinka teisės aktų reikalavimus."
+
+#: includes/Admin/AdminDashboard.php:451
+msgid "Letzte 50 Anmeldungen"
+msgstr "Paskutinės 50 prenumeratų"
+
+#: includes/Admin/AdminDashboard.php:455
+msgid "CSV-Export (bis 5.000 Zeilen)"
+msgstr "CSV eksportas (iki 5 000 eilučių)"
+
+#: includes/Admin/AdminDashboard.php:461
+msgid "ID"
+msgstr "ID"
+
+#: includes/Admin/AdminDashboard.php:462
+msgid "E-Mail"
+msgstr "El. paštas"
+
+#: includes/Admin/AdminDashboard.php:463
+msgid "IP-Hash"
+msgstr "IP maiša"
+
+#: includes/Admin/AdminDashboard.php:464
+msgid "Hash des Einwilligungstexts"
+msgstr "Sutikimo teksto maiša"
+
+#: includes/Admin/AdminDashboard.php:465
+msgid "Status"
+msgstr "Būsena"
+
+#: includes/Admin/AdminDashboard.php:467
+msgid "Angemeldet"
+msgstr "Užregistruota"
+
+#: includes/Admin/AdminDashboard.php:468
+msgid "Bestätigt"
+msgstr "Patvirtinta"
+
+#: includes/Admin/AdminDashboard.php:473
+msgid "Keine Anmeldungen vorhanden."
+msgstr "Prenumeratų nėra."
+
+#: includes/Admin/AdminDashboard.php:506
+msgid "Allgemein und Absender"
+msgstr "Bendra ir siuntėjas"
+
+#: includes/Admin/AdminDashboard.php:516
+msgid "Absendername"
+msgstr "Siuntėjo vardas"
+
+#: includes/Admin/AdminDashboard.php:520
+msgid "Absenderadresse"
+msgstr "Siuntėjo el. paštas"
+
+#: includes/Admin/AdminDashboard.php:524
+msgid "Betreff der Bestätigungsmail"
+msgstr "Patvirtinimo laiško tema"
+
+#: includes/Admin/AdminDashboard.php:528
+msgid ""
+"Bestätigungsfenster in Stunden (1–168); danach werden unbestätigte "
+"Anmeldungen gelöscht"
+msgstr ""
+"Patvirtinimo langas valandomis (1–168); jam pasibaigus nepatvirtintos "
+"prenumeratos ištrinamos"
+
+#: includes/Admin/AdminDashboard.php:532
+msgid "Impressum-URL (Fuß der Bestätigungsmail)"
+msgstr "Teisinės informacijos URL (patvirtinimo laiško poraštė)"
+
+#: includes/Admin/AdminDashboard.php:536
+msgid "Datenschutzerklärung-URL (Formular und Mail)"
+msgstr "Privatumo politikos URL (forma ir laiškas)"
+
+#: includes/Admin/AdminDashboard.php:542
+msgid ""
+"Proof-of-Work im Formular verlangen (der Browser rechnet vor dem Absenden; "
+"ohne HTTPS nicht möglich)"
+msgstr ""
+"Reikalauti proof-of-work formoje (naršyklė apskaičiuoja prieš siųsdama; "
+"būtinas HTTPS)"
+
+#: includes/Admin/AdminDashboard.php:548
+msgid ""
+"List-Unsubscribe- und List-Unsubscribe-Post-Header in die Bestätigungsmail "
+"setzen"
+msgstr ""
+"Įtraukti List-Unsubscribe ir List-Unsubscribe-Post antraštes į patvirtinimo "
+"laišką"
+
+#: includes/Admin/AdminDashboard.php:554
+msgid "Zugangsdaten der Anbieter"
+msgstr "Teikėjų prisijungimo duomenys"
+
+#: includes/Admin/AdminDashboard.php:556
+msgid "Brevo API-Schlüssel"
+msgstr "Brevo API raktas"
+
+#: includes/Admin/AdminDashboard.php:560
+msgid "Rapidmail API-Benutzer"
+msgstr "Rapidmail API naudotojas"
+
+#: includes/Admin/AdminDashboard.php:564
+msgid "Rapidmail API-Passwort"
+msgstr "Rapidmail API slaptažodis"
+
+#: includes/Admin/AdminDashboard.php:568
+msgid "CleverReach REST-Token"
+msgstr "CleverReach REST prieigos raktas"
+
+#: includes/Admin/AdminDashboard.php:572
+msgid "Kit API-Schlüssel (v4)"
+msgstr "Kit API raktas (v4)"
+
+#: includes/Admin/AdminDashboard.php:576
+msgid "Mailchimp API-Schlüssel (mit Rechenzentrum, z. B. …-us6)"
+msgstr "Mailchimp API raktas (su duomenų centru, pvz., …-us6)"
+
+#: includes/Admin/AdminDashboard.php:580
+msgid ""
+"Standard-Liste bzw. Gruppen-ID (Rapidmail, CleverReach und Mailchimp "
+"brauchen eine echte ID)"
+msgstr ""
+"Numatytasis sąrašo arba grupės ID (Rapidmail, CleverReach ir Mailchimp "
+"reikalauja tikro ID)"
+
+#: includes/Admin/AdminDashboard.php:586
+msgid "Webhook für Abmeldungen beim Anbieter"
+msgstr "Webhookas atsisakymams pas teikėją"
+
+#: includes/Admin/AdminDashboard.php:587
+msgid ""
+"Tragen Sie diese Adresse beim Anbieter ein. Ein Ereignis unsubscribe, spam, "
+"contact_deleted, unsub, complaint oder deleted (oder keines) mit einer E-"
+"Mail-Adresse setzt den lokalen Eintrag auf abgemeldet. Die Adresse enthält "
+"den Schlüssel: nicht weitergeben."
+msgstr ""
+"Įveskite šį adresą pas teikėją. Įvykis unsubscribe, spam, contact_deleted, "
+"unsub, complaint arba deleted (arba be įvykio) su el. pašto adresu pažymi "
+"vietinį įrašą kaip atsisakiusį. Adrese yra slaptasis raktas: juo "
+"nesidalykite."
+
+#: includes/Admin/AdminDashboard.php:589
+msgid "Webhook-URL"
+msgstr "Webhooko URL"
+
+#: includes/Admin/AdminDashboard.php:595
+msgid "Deinstallation und Datenaufbewahrung"
+msgstr "Pašalinimas ir duomenų saugojimas"
+
+#: includes/Admin/AdminDashboard.php:596
+msgid ""
+"Standardmäßig bleiben Einstellungen, Abonnenten und Einwilligungsprotokolle "
+"beim Löschen des Plugins erhalten."
+msgstr ""
+"Pagal numatytuosius nustatymus ištrynus įskiepį nuostatos, prenumeratoriai "
+"ir sutikimų įrašai išsaugomi."
+
+#: includes/Admin/AdminDashboard.php:600
+msgid ""
+"Alle Einstellungen, Abonnenten und Einwilligungsprotokolle beim "
+"Deinstallieren unwiderruflich löschen"
+msgstr ""
+"Pašalinant negrįžtamai ištrinti visas nuostatas, prenumeratorius ir sutikimų "
+"įrašus"
+
+#: includes/Admin/AdminDashboard.php:605
+msgid "Einstellungen speichern"
+msgstr "Išsaugoti nuostatas"
+
+#: includes/Admin/AdminDashboard.php:610
+msgid "Formular einbinden"
+msgstr "Įterpti formą"
+
+#: includes/Admin/AdminDashboard.php:611
+msgid ""
+"Der Shortcode gibt das Anmeldeformular mit Einwilligungs-Checkbox und Link "
+"zur Datenschutzerklärung aus. Einen Gutenberg-Block gibt es nicht."
+msgstr ""
+"Trumpasis kodas išveda prenumeratos formą su sutikimo langeliu ir nuoroda į "
+"privatumo politiką. Gutenbergo bloko nėra."
+
+#: includes/Admin/AdminDashboard.php:616
+msgid "Attribut"
+msgstr "Atributas"
+
+#: includes/Admin/AdminDashboard.php:617
+msgid "Standardwert"
+msgstr "Numatytoji reikšmė"
+
+#: includes/Admin/AdminDashboard.php:618
+msgid "Bedeutung"
+msgstr "Reikšmė"
+
+#: includes/Admin/AdminDashboard.php:622
+msgid "Überschrift des Formulars"
+msgstr "Formos antraštė"
+
+#: includes/Admin/AdminDashboard.php:623
+msgid "Text unter der Überschrift; leer bleibt er weg"
+msgstr "Tekstas po antrašte; tuščias nerodomas"
+
+#: includes/Admin/AdminDashboard.php:624
+msgid ""
+"Liste beim Anbieter; ohne Angabe (oder mit dem Wert default) gilt die "
+"Standard-Liste aus den Einstellungen"
+msgstr ""
+"Sąrašas pas teikėją; nenurodžius (arba su reikšme default) taikomas "
+"numatytasis sąrašas iš nuostatų"
+
+#: includes/Admin/AdminDashboard.php:625
+msgid ""
+"art_6_1_a oder art_6_1_b; wird mit der Anmeldung gespeichert, das Plugin "
+"prüft sie nicht"
+msgstr ""
+"art_6_1_a arba art_6_1_b; išsaugoma kartu su prenumerata be teisinio "
+"patikrinimo"
+
+#: includes/Admin/AdminDashboard.php:626
+msgid "Beschriftung des Absende-Buttons"
+msgstr "Pateikimo mygtuko užrašas"
+
+#: includes/Admin/SettingsManager.php:41 includes/Core/Activator.php:54
+#: includes/Mailer/DoiMailer.php:48
+msgid "Bitte bestätigen Sie Ihre Anmeldung"
+msgstr "Patvirtinkite savo prenumeratą"
+
+#: includes/Database/DoiRepository.php:147
+msgid "Ungültiger oder nicht gefundener Bestätigungstoken."
+msgstr "Neteisingas arba nerastas patvirtinimo prieigos raktas."
+
+#: includes/Database/DoiRepository.php:158
+msgid "Ihre E-Mail-Adresse wurde bereits erfolgreich bestätigt."
+msgstr "Jūsų el. pašto adresas jau buvo patvirtintas."
+
+#: includes/Database/DoiRepository.php:168
+msgid "Dieser Bestätigungslink ist nicht mehr gültig."
+msgstr "Ši patvirtinimo nuoroda nebegalioja."
+
+#. translators: %d: hours a confirmation link stays valid
+#: includes/Database/DoiRepository.php:186
+#, php-format
+msgid ""
+"Der Bestätigungslink ist abgelaufen (gültig %d Stunden). Bitte melden Sie "
+"sich erneut an."
+msgstr ""
+"Patvirtinimo nuorodos galiojimas baigėsi (galiojo %d val.). Prenumeruokite "
+"iš naujo."
+
+#: includes/Database/DoiRepository.php:229
+msgid "Vielen Dank! Ihre E-Mail-Adresse wurde erfolgreich bestätigt."
+msgstr "Ačiū! Jūsų el. pašto adresas sėkmingai patvirtintas."
+
+#: includes/Domain/Enum/SubscriberStatus.php:18
+msgid "Aktiv abonniert"
+msgstr "Aktyvus prenumeratorius"
+
+#: includes/Domain/Enum/SubscriberStatus.php:19
+msgid "Abgemeldet"
+msgstr "Atsisakė"
+
+#: includes/Domain/Enum/SubscriberStatus.php:20
+msgid "Bereinigt / Gelöscht"
+msgstr "Išvalyta / Ištrinta"
+
+#: includes/Domain/Enum/SubscriberStatus.php:21
+msgid "Unbekannter Status"
+msgstr "Nežinoma būsena"
+
+#: includes/Frontend/EcosystemIntegrations.php:52
+msgid "WM Newsletter Statistik"
+msgstr "WM naujienlaiškio statistika"
+
+#: includes/Frontend/EcosystemIntegrations.php:63
+msgid "Newsletter-Statistik"
+msgstr "Naujienlaiškio statistika"
+
+#: includes/Frontend/EcosystemIntegrations.php:70
+msgid "Kennzahl"
+msgstr "Rodiklis"
+
+#. translators: %s: Privacy policy URL
+#: includes/Frontend/FormRenderer.php:49
+#, php-format
+msgid ""
+"Ich willige in die Verarbeitung meiner E-Mail-Adresse zum Zweck des "
+"Newsletter-Versands ein. Der Widerruf ist gem. Art. 7 Abs. 3 DSGVO jederzeit "
+"möglich (<a href=\"%s\" target=\"_blank\" "
+"rel=\"noopener\">Datenschutzerklärung</a>)."
+msgstr ""
+"Sutinku, kad mano el. pašto adresas būtų tvarkomas naujienlaiškio siuntimo "
+"tikslu. Sutikimą galima bet kada atšaukti pagal BDAR 7 str. 3 d. (<a "
+"href=\"%s\" target=\"_blank\" rel=\"noopener\">Privatumo politika</a>)."
+
+#: includes/Frontend/FormRenderer.php:87
+msgid "Wird übermittelt …"
+msgstr "Siunčiama…"
+
+#: includes/Frontend/FormRenderer.php:88
+msgid "Sicherheitsprüfung läuft …"
+msgstr "Vyksta saugos patikra…"
+
+#: includes/Frontend/FormRenderer.php:89
+msgid "Bestätigungslink wurde gesendet. Bitte prüfen Sie Ihr Postfach."
+msgstr "Patvirtinimo nuoroda išsiųsta. Patikrinkite savo pašto dėžutę."
+
+#: includes/Frontend/FormRenderer.php:90
+msgid "Ein Fehler ist aufgetreten. Bitte versuchen Sie es erneut."
+msgstr "Įvyko klaida. Bandykite dar kartą."
+
+#: includes/Frontend/FormRenderer.php:91
+#: includes/REST/SubscriptionController.php:196
+msgid "Bitte bestätigen Sie die Einwilligung."
+msgstr "Patvirtinkite sutikimą."
+
+#: includes/Frontend/FormRenderer.php:92
+msgid ""
+"Ihr Browser kann die Sicherheitsprüfung nicht ausführen (nur über HTTPS "
+"verfügbar)."
+msgstr ""
+"Jūsų naršyklė negali atlikti saugos patikros (pasiekiama tik per HTTPS)."
+
+#: includes/Frontend/FormRenderer.php:106
+msgid "Newsletter abonnieren"
+msgstr "Prenumeruoti naujienlaiškį"
+
+#: includes/Frontend/FormRenderer.php:112
+msgid "Anmelden"
+msgstr "Prenumeruoti"
+
+#: includes/Frontend/FormRenderer.php:140
+#: includes/Frontend/FormRenderer.php:141
+msgid "Nicht ausfüllen"
+msgstr "Nepildyti"
+
+#: includes/Frontend/FormRenderer.php:146
+msgid "E-Mail-Adresse"
+msgstr "El. pašto adresas"
+
+#: includes/Frontend/FormRenderer.php:187
+msgid "E-Mail-Adresse bestätigt"
+msgstr "El. pašto adresas patvirtintas"
+
+#: includes/Frontend/FormRenderer.php:187
+msgid "Bestätigung nicht möglich"
+msgstr "Patvirtinti nepavyko"
+
+#: includes/Frontend/FormRenderer.php:190
+msgid "Zur Startseite"
+msgstr "Į pradžią"
+
+#. translators: %d: hours an unconfirmed address is kept
+#: includes/Mailer/DoiMailer.php:56
+#, php-format
+msgid ""
+"Falls Sie diese Anfrage nicht ausgelöst haben, können Sie diese E-Mail "
+"ignorieren. Ohne Bestätigung wird Ihre Adresse nach %d Stunden gelöscht."
+msgstr ""
+"Jei šios užklausos nepateikėte, galite nepaisyti šio laiško. Nepatvirtinus "
+"adresas bus ištrintas po %d valandų."
+
+#: includes/Mailer/DoiMailer.php:64
+msgid "Bestätigung Ihrer E-Mail-Adresse"
+msgstr "Jūsų el. pašto adreso patvirtinimas"
+
+#: includes/Mailer/DoiMailer.php:65
+msgid ""
+"Sie haben sich mit dieser E-Mail-Adresse für unseren Newsletter angemeldet. "
+"Um Ihre Anmeldung abzuschließen und den Empfang zu aktivieren, klicken Sie "
+"bitte auf den folgenden Bestätigungslink:"
+msgstr ""
+"Šiuo el. pašto adresu užsiprenumeravote mūsų naujienlaiškį. Norėdami "
+"užbaigti registraciją ir aktyvuoti gavimą, spustelėkite šią patvirtinimo "
+"nuorodą:"
+
+#: includes/Mailer/DoiMailer.php:68
+msgid "Anmeldung bestätigen"
+msgstr "Patvirtinti prenumeratą"
+
+#: includes/Mailer/DoiMailer.php:75
+msgid "Impressum"
+msgstr "Teisinė informacija"
+
+#: includes/Mailer/DoiMailer.php:76
+msgid "Datenschutzerklärung"
+msgstr "Privatumo politika"
+
+#: includes/Queue/SyncQueue.php:74
+msgid "Alle fünf Minuten"
+msgstr "Kas penkias minutes"
+
+#: includes/REST/SubscriptionController.php:71
+#: includes/REST/SubscriptionController.php:94
+#: includes/REST/SubscriptionController.php:154
+#: includes/REST/SubscriptionController.php:282
+msgid "Zu viele Anfragen. Bitte warten Sie einen Moment."
+msgstr "Per daug užklausų. Truputį palaukite."
+
+#: includes/REST/SubscriptionController.php:166
+msgid "Vielen Dank für Ihre Anmeldung! Bitte prüfen Sie Ihr Postfach."
+msgstr "Dėkojame už registraciją! Patikrinkite savo pašto dėžutę."
+
+#: includes/REST/SubscriptionController.php:179
+msgid "Sicherheitsüberprüfung fehlgeschlagen (Proof-of-Work ungültig)."
+msgstr "Saugos patikra nepavyko (neteisingas proof-of-work)."
+
+#: includes/REST/SubscriptionController.php:189
+msgid "Bitte geben Sie eine gültige E-Mail-Adresse ein."
+msgstr "Įveskite galiojantį el. pašto adresą."
+
+#: includes/REST/SubscriptionController.php:204
+msgid "Das Formular ist ungültig. Bitte laden Sie die Seite neu."
+msgstr "Forma netinkama. Įkelkite puslapį iš naujo."
+
+#: includes/REST/SubscriptionController.php:235
+msgid ""
+"Die Anmeldung konnte nicht gespeichert werden. Bitte versuchen Sie es später."
+msgstr "Prenumeratos išsaugoti nepavyko. Bandykite vėliau."
+
+#: includes/REST/SubscriptionController.php:247
+msgid ""
+"Die Bestätigungs-E-Mail konnte nicht versendet werden. Bitte versuchen Sie "
+"es später."
+msgstr "Patvirtinimo laiško išsiųsti nepavyko. Bandykite vėliau."
+
+#: includes/REST/SubscriptionController.php:253
+msgid ""
+"Fast geschafft! Wir haben Ihnen einen Bestätigungslink per E-Mail gesendet."
+msgstr "Beveik baigta! El. paštu išsiuntėme patvirtinimo nuorodą."
+
+#: includes/REST/SubscriptionController.php:290
+msgid "Bitte geben Sie eine gültige E-Mail-Adresse an."
+msgstr "Nurodykite galiojantį el. pašto adresą."
+
+#: includes/REST/SubscriptionController.php:298
+msgid ""
+"Der Abmeldelink ist ungültig oder abgelaufen. Bitte nutzen Sie den Link aus "
+"Ihrer E-Mail."
+msgstr ""
+"Atsisakymo nuoroda netinkama arba nebegalioja. Naudokite nuorodą iš savo el. "
+"laiško."
+
+#: includes/REST/SubscriptionController.php:306
+msgid "Sie wurden erfolgreich vom Newsletter abgemeldet."
+msgstr "Sėkmingai atsisakėte naujienlaiškio."
+
+#. translators: %s: incident reference the visitor can quote to support
+#: includes/Security/ErrorSanitizer.php:28
+#, php-format
+msgid "Ein Systemfehler ist aufgetreten. Referenznummer: %s"
+msgstr "Įvyko sistemos klaida. Nuorodos numeris: %s"
+
+#: includes/Security/RequestShield.php:54
+msgid "Die Anfrage wurde abgelehnt."
+msgstr "Užklausa atmesta."
+
+#~ msgid "https://www.arnoldwender.com"
+#~ msgstr "https://www.arnoldwender.com"
